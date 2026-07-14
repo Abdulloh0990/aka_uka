@@ -28,7 +28,7 @@ const TR={
     isNew:"Yangi",hot:"Trend",prods:"mahsulot",desc:"Tavsif",noRes:"Mahsulot topilmadi",
     filterApplied:"Filtr qo'llandi",filterCleared:"Filtr tozalandi",sort:"Saralash",sortDef:"Standart",
     sortPriceAsc:"Narx ↑",sortPriceDesc:"Narx ↓",sortRating:"Reyting",allBrands:"Barcha Brendlar",
-    workHours:"09:00-20:00",payNote:"To'lov Markaziy Bank kursi bo'yicha so'mda",wall:"Devordagi",
+    workHours:"09:00-19:00",payNote:"To'lov Markaziy Bank kursi bo'yicha so'mda",wall:"Devordagi",
     floor:"Kolonnik",copy:"Nusxalandi!",currency:"So'mda to'lov",founded:"Tashkil etilgan: 2019",
     address:"Toshkent, O'zbekiston",hours:"Ish vaqti",subFront:"Old yuklanadigan",subTop:"Yuqoridan",
     subRange:"Plita",subHob:"Qo'shma pech",subHood:"Vityajka",subSide:"Yon tomondan",
@@ -41,7 +41,7 @@ const TR={
     isNew:"Новинка",hot:"Хит",prods:"товаров",desc:"Описание",noRes:"Товары не найдены",
     filterApplied:"Фильтр применён",filterCleared:"Фильтр сброшен",sort:"Сортировка",sortDef:"По умолчанию",
     sortPriceAsc:"Цена ↑",sortPriceDesc:"Цена ↓",sortRating:"По рейтингу",allBrands:"Все бренды",
-    workHours:"09:00-20:00",payNote:"Оплата по курсу ЦБ в сумах",wall:"Настенный",floor:"Напольный",
+    workHours:"09:00-19:00",payNote:"Оплата по курсу ЦБ в сумах",wall:"Настенный",floor:"Напольный",
     copy:"Скопировано!",currency:"Оплата в сумах",founded:"Основан: 2019",address:"Ташкент, Узбекистан",
     hours:"Время работы",subFront:"Фронтальная",subTop:"Вертикальная",subRange:"Плита",
     subHob:"Поверхность",subHood:"Вытяжка",subSide:"Side-by-Side",
@@ -54,7 +54,7 @@ const TR={
     isNew:"New",hot:"Hot",prods:"products",desc:"Description",noRes:"No products found",
     filterApplied:"Filter applied",filterCleared:"Filter cleared",sort:"Sort",sortDef:"Default",
     sortPriceAsc:"Price ↑",sortPriceDesc:"Price ↓",sortRating:"By Rating",allBrands:"All Brands",
-    workHours:"09:00-20:00",payNote:"Payment at CBU rate in UZS",wall:"Wall-mount",floor:"Floor-standing",
+    workHours:"09:00-19:00",payNote:"Payment at CBU rate in UZS",wall:"Wall-mount",floor:"Floor-standing",
     copy:"Copied!",currency:"Pay in UZS",founded:"Founded: 2019",address:"Tashkent, Uzbekistan",
     hours:"Working hours",subFront:"Front-load",subTop:"Top-load",subRange:"Range",
     subHob:"Gas Hob",subHood:"Hood",subSide:"Side-by-Side",
@@ -72,36 +72,49 @@ const CATS=[
   {id:"conditioner",key:"conditioner",icon:"❄️"},{id:"fridge",key:"fridge",icon:"🧊"},
   {id:"washer",key:"washer",icon:"🔄"},{id:"builtin",key:"builtin",icon:"🔧"},
 ];
-const IM={
-  w1:"https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
-  w2:"https://images.unsplash.com/photo-1631525968550-b0ae7ff4ff8c?w=600&q=80",
-  w3:"https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80",
-  w4:"https://images.unsplash.com/photo-1621571948695-3eaa0427f4b5?w=600&q=80",
-  f1:"https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=600&q=80",
-  fr1:"https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=600&q=80",
-  fr2:"https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=600&q=80",
-  fr3:"https://images.unsplash.com/photo-1562184552-997c461abbe3?w=600&q=80",
-  fr4:"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
-  wm1:"https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=600&q=80",
-  wm2:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-  wm3:"https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=600&q=80",
-  bi1:"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
-  bi2:"https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=600&q=80",
-  bi3:"https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=600&q=80",
-};
-
 /* ══════════════════════════════════════════════════════════════════════
    🖼️ RASM LINKLARI — BU YERGA O'ZINGIZ TOPGAN RASM LINKINI QO'YING
    ────────────────────────────────────────────────────────────────────
-   Har bir qatorda: model kodi: "" — bo'sh joyga rasm URL manzilini yozing.
-   Google Images'da qatorning oxiridagi izohdagi nomni qidiring, rasmni
-   oching, o'ng tugma → "nusxalash rasm manzili" (copy image address),
-   keyin o'sha linkni "" ichiga joylashtiring. Masalan:
+   ENDI BARCHA 113 TA MAHSULOT UCHUN JOY BOR — Konditsioner, Xolodilnik,
+   Kir Mashinasi va Vstroyenniy Texnika, hammasi pastda toifa bo'yicha
+   guruhlangan. Har bir qatorda: model kodi: "" — bo'sh joyga rasm URL
+   manzilini yozing. Google Images'da qatorning oxiridagi izohdagi nomni
+   qidiring, rasmni oching, o'ng tugma → "nusxalash rasm manzili" (copy
+   image address), keyin o'sha linkni "" ichiga joylashtiring. Masalan:
    tcl_br18: "https://sizning-topgan-rasm-linkingiz.jpg",
    Bo'sh qoldirilgan modellar avtomatik ravishda modelning nomi yozilgan
    kulrang placeholder rasmni ko'rsatadi — sayt hech qachon buzilmaydi.
 ══════════════════════════════════════════════════════════════════════ */
 const PIMG={
+  // ═══════════════════ KONDITSIONER — DEVORDAGI (WALL) ═══════════════════
+  // ─── Hofmann ───
+  hof_c09:    "https://cdn.asaxiy.uz/asaxiy-content/product/main_image/mobile/69e08275d2427.jpg.webp", // Qidiring: Hofmann Compact 09 3D Inverter Wi-Fi
+  hof_c12:    "https://olcha.uz/image/675x900/products/FfoMkUvgFE1SeUSi4jmXxxjzCb7gswQ4V6XCp619G4ENDhSBhzy3jeICPGed.jpg", // Qidiring: Hofmann Compact 12 3D Inverter Wi-Fi
+  hof_c18:    "https://assets.asaxiy.uz/product/main_image/mobile/69e075069514e.jpg.webp", // Qidiring: Hofmann Compact 18 3D Inverter Wi-Fi
+  hof_c24:    "https://cdn.asaxiy.uz/asaxiy-content/product/items/mobile/70204a10b4623d04ada2c86ce1fb324e2026041610250937908tWgzhqQ17i.jpg.webp", // Qidiring: Hofmann Compact 24 3D Inverter Wi-Fi
+  hof_scb12:  "https://images.uzum.uz/d8g1dds9g1ktqmlrcorg/t_product_540_high.jpg", // Qidiring: Hofmann S-Class Black 12 UV 3D G10
+  hof_scb18:  "https://on-off.uz/wp-content/uploads/2025/05/ceabc70bd4adec92eca7f4d355302dcb2023061312113565191auv8ldkell.jpg.webp", // Qidiring: Hofmann S-Class Black 18 UV 3D G10
+  hof_solg12: "https://assets.asaxiy.uz/product/items/desktop/dfc539e7f114cf7b4d6ba020732d26de2026041609213786818xf8QFNjaoB.jpg.webp", // Qidiring: Hofmann Solo Gold 12 3D G10 Wi-Fi
+  hof_eleg12: "https://on-off.uz/wp-content/uploads/2024/09/c20ad4d76fe97759aa27a0c99bff67102023040512352462589b4mdkpxuqe.jpg", // Qidiring: Hofmann Elegance 12 G10 UV Wi-Fi
+  hof_inf12:  "https://on-off.uz/wp-content/uploads/2023/03/2022-12-23-22-30-52-803485-a22613b7090293512438e2f468076421-1-250x250.jpg", // Qidiring: Hofmann Infinity 12 G10 Wi-Fi Premium
+  // ─── LG ───
+  lg_ab12bk:  "https://www.lg.com/ru/images/air-conditioners-split-systems/md07593919/gallery/medium01.jpg", // Qidiring: LG AB12BK Objet Collection Beige
+  lg_ag12bk:  "https://minapi.beemarket.uz/prod-media/productImages/1738743758fqZuf26c7RLk.webp", // Qidiring: LG AG12BK Objet Collection Black
+  lg_ap12rk:  "https://www.lg.com/ru/images/air-conditioners-split-systems/md07599051/gallery/N08_D08.jpg", // Qidiring: LG AP12RK ProCool Ionizer
+  lg_a12ga1:  "https://frankfurt.apollo.olxcdn.com/v1/files/35k6m42umggs-UZ/image;s=1100x1100", // Qidiring: LG A12GA1 Art Gallery Ultra Premium
+  // ─── Beston ───
+  bst_vic12:  " https://cdn-img.birbir.uz/i/400x400-fit/files/03/31/2ff236365fc26b7df06174716043.jpg ", // Qidiring: Beston Victory 12 Full DC Inverter
+  // ─── Aufit ───
+  auf_h12gmcc: "https://zavq.uz/wp-content/uploads/2026/05/aufit-asw-h12a4-qhr3di-ie.webp", // Qidiring: Aufit H12 GMCC DC Inverter
+  auf_h18sanyo:"https://olcha.uz/image/675x900/products/gBQgZ8vZOyG8umgY4FB8FWcq5AwhX0C5YB2INI8rjyds3GKQj5tNJizYOoDi.jpg", // Qidiring: Aufit H18 SANYO DC Inverter
+  auf_h12pana: "https://olcha.uz/image/675x900/products/cdn_1/supplier/stores/1/2024-06-10/DTqP5k6EY6XBUwmyxMZ6yBfgC0actW0ayBzRm66ug0bVXnoy7QHWQ2kWPP2q.JPG", // Qidiring: Aufit H12 Panasonic Gentle Wind
+  // ═══════════════════ KONDITSIONER — KOLONNIK (FLOOR) ═══════════════════
+  // ─── Beston ───
+  bst_abox24: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCjlawWHXBzc6Z7pFki5uGyI5svXiPzHLn4iSXyjLUYg&s", // Qidiring: Beston Air Box 24 Kolonnik Full DC Inverter
+  bst_abox48: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCjlawWHXBzc6Z7pFki5uGyI5svXiPzHLn4iSXyjLUYg&s", // Qidiring: Beston Air Box 48 Kolonnik
+  // ─── T-Tech ───
+  tt_p24wfs1:  "https://aws-obg-image-lb-1.tcl.com/content/dam/brandsite/product/ac/split-wall-mounted/v7/id/1.png?t=1774488605387&w=800", // Qidiring: T-Tech 7AC4P24WFS1 White Floor Standing
+  tt_p24gwfs1: "https://assets.asaxiy.uz/product/items/desktop/faeac4e1eef307c2ab7b0a3821e6c6672025062113274513455JRneCx8QHR.jpg.webp", // Qidiring: T-Tech 7AC4P24GWFS1 Gold Floor Standing
   // ─── TCL Konditsioner (rasm 1dan) ───
   tcl_br18:  "https://tcl-russia.ru/upload/resize_cache/iblock/176/396_396_0/aqu15ctpof0v462w5ehzxq6z597jiaod.jpg", // Qidiring: TCL Breezein TAC-BR18HSV/TA
   tcl_br24:  "https://www.itsklad.kz/upload/iblock/402/ypmpb7p9ohsnfdu4aptzv0pdqwyey16a/Melkaya-bytovaya-tekhnika.jpg", // Qidiring: TCL Breezein TAC-BR24HSV/TA
@@ -110,7 +123,7 @@ const PIMG={
   tcl_fr18s: "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/region/russia/products/ac/freshin-plus/silver/new/1.jpg?t=1751355813700&w=800", // Qidiring: TCL Fresh In 3.0 TAC-FR18HSV/P7S silver
   tcl_fr18b: "https://aws-obg-image-lb-5.tcl.com/content/dam/brandsite/region/russia/products/ac/freshin-plus/black/new/1.jpg?t=1751355813700&w=800", // Qidiring: TCL Fresh In 3.0 TAC-FR18HSV/P7B black
   tcl_k24mci:"https://olcha.uz/image/675x900/products/2021-06-09/konditsioner-lenox-24-inverter-column-moon-24044-0.jpeg", // Qidiring: TCL Kolonnik TAC-24CHFD/MCI
-  tcl_k24fhi:"", // Qidiring: TCL Kolonnik TAC-24CHFA/FHI
+  tcl_k24fhi:"https://realklimat.kz/img/products/199f09f0130822f7c8695e49af0174be.jpg", // Qidiring: TCL Kolonnik TAC-24CHFA/FHI
   tcl_k36fhi:" https://abedtahan.com/cdn/shop/files/TAC-36CHFAFHI_2.jpg?v=1748871795&width=1200 ", // Qidiring: TCL Kolonnik TAC-36CHFA/FHI
   // ─── Ziffler Konditsioner (rasm 2dan) ───
   zif_z12:   "https://cdn.asaxiy.uz/asaxiy-content/product/items/mobile/1732cb437260c60a0744aea8aedfa3312025031010475195029qabkkPK5RE.jpg.webp", // Qidiring: Ziffler FAC-Z12W2MW Full DC Inverter
@@ -152,6 +165,74 @@ const PIMG={
   gr_tfresh55:"https://iororwxhlpoilo5p-static.micyjz.com/cloud/lnBpiKijlmSRjlqlqilqkq/Ha3606e3ede6e42b4b8243851f214e4aaT.jpg",// Qidiring: Gree T-Fresh 55000 BTU floor standing
   gr_t3_60:  "https://sc04.alicdn.com/kf/Ha864e7dcf4a44a10a4e40b3cff9ad21bT.jpg", // Qidiring: Gree T-3 60000 BTU floor standing
   gr_grand100:"https://assets.asaxiy.uz/product/items/desktop/1679091c5a880faf6fb5e6087eb1b2dc2025042110243470893eOCbyhkPk7.jpg.webp",// Qidiring: Gree Grand 100000 BTU floor standing
+
+  // ═══════════════════════════ XOLODILNIK ═══════════════════════════
+  // ─── Beston — Ustdan muzlatgichli ───
+  bst_bc543inv: "https://assets.asaxiy.uz/product/items/desktop/a87ff679a2f3e71d9181a67b7542122c2025040314255666131kbj7u3m3ZU.jpg.webp", // Qidiring: Beston BC-543INV No Frost Inverter 413L
+  bst_bc543dnv: "https://beston.uz/wp-content/uploads/2025/02/bc-541bcv-1.avif", // Qidiring: Beston BC-543DNV No Frost Dark Inox
+  bst_bc815inv: "https://olcha.uz/image/675x900/products/FLP4qqy7SbqCJ8wG3Npitm5TE6dqlQmUGtbOIKaIl3fds6LzWPGqkXAX9DfP.jpg", // Qidiring: Beston BC-815INV No Frost Inverter 527L
+  bst_bc865dnv: "https://cdn.asaxiy.uz/asaxiy-content/product/items/desktop/c4ca4238a0b923820dcc509a6f75849b2025040311502315585c3IyAmlYfR.jpg.webp", // Qidiring: Beston BC-865DNV No Frost Dark Inox 635L
+  // ─── Beston — Pastdan muzlatgichli ───
+  bst_bn483slv:  "https://cdn-img.birbir.uz/i/400x400-fit/files/a7/29/7b13053b474bd818b6128c0da45d.jpg", // Qidiring: Beston BN-483SLV No Frost Silver 239L
+  bst_bn567blv:  "https://olcha.uz/image/675x900/products/2022-03-29/kholodilnik-beston-bn-547blv-43635-0.jpeg", // Qidiring: Beston BN-567BLV No Frost Black Glass
+  bst_bn595dnv:  "https://beston.uz/wp-content/uploads/2026/06/image_2026-06-20_16-55-46-768x1213.png", // Qidiring: Beston BN-595DNV No Frost Dark Inox 435L
+  bst_bmf577glv: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH4n9esBtaulbXBPpF7oH2Tu_o-vA_JE9u4-1zIREAXypxMk304zcRETU&s=10", // Qidiring: Beston BMF-577GLV NoFrost Gray Glass
+  // ─── Beston — Yon tomondan (Side by Side) ───
+  bst_bsm897blv:  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ_jklmQOg2lCtrSga55caMQ5jXeGjor39x24gofDJlOlVs7ki6_CliTs&s=10", // Qidiring: Beston BSM-897BLV Side by Side 503L
+  bst_bsb907blmv: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT64okf3U27UAlHXKjC3Cgoxzd7-fv89RjimDYguJCEoGXPYKxHw0o7Jkc&s=10", // Qidiring: Beston BSB-907BLMV Side by Side 584L
+  // ─── LG — Yon tomondan ───
+  lg_gcf689blcm: "https://cdn.asaxiy.uz/asaxiy-content/product/items/mobile/c4ca4238a0b923820dcc509a6f75849b2022011311085347416Mcxfq8QlK2.jpg.webp", // Qidiring: LG GC-F689BLCM Total No Frost 451L
+  // ─── Beston — O'rnatiluvchi ───
+  bst_bni542wt: "https://frankfurt.apollo.olxcdn.com/v1/files/e97lwj54kpsv-UZ/image;s=1500x2000", // Qidiring: Beston BNI-542WT Built-in NoFrost 307L
+  bst_bni592wt: "https://frankfurt.apollo.olxcdn.com/v1/files/v083xd6znxp82-UZ/image;s=1500x2000", // Qidiring: Beston BNI-592WT Built-in NoFrost 403L
+  // ─── Ziffler — Pastdan muzlatgichli ───
+  zif_rfbf306i:  "https://olcha.uz/image/675x900/products/cdn_1/supplier/stores/1/2025-06-24/yJBc3PoZyOxzkZN2PZpz73DQ0OKKVWbbVLMVGAyPBl4cD5bNVWTUcBrQ6jK8.jpg", // Qidiring: Ziffler RF-BF-306I NoFrost Inverter
+  zif_rfbf400sv: "https://cdn.phototourl.com/free/2026-07-11-a58b17cd-1e74-42f0-afa1-d83ab3e45309.png", // Qidiring: Ziffler RF-BF-400SV DARK Silver
+  zif_rfbf400bg: "https://univershop.uz/wp-content/uploads/2025/08/1-60.webp", // Qidiring: Ziffler RF-BF-400BG DARK Black Glass
+  // ─── T-Tech ───
+  tt_ref595bgs1: "https://cdn.elbozor.uz/uploads/offer/2025/10/29/Rfzlgc1y3aqF.webp", // Qidiring: T-Tech 7REF4P595BGS1 Side by Side
+  tt_ref300ss1:  "https://cdn.asaxiy.uz/asaxiy-content/product/items/mobile/d72d187df41e10ea7d9fcdc7f590920520260203100620470733l5q3TPohN.jpg.webp", // Qidiring: T-Tech 7REF4S300SS1 NoFrost Inverter
+
+  // ═══════════════════════════ KIR MASHINASI ═══════════════════════════
+  // ─── LG — Old yuklanadigan ───
+  lg_f2j3ws1w:    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadRTfuXz12NZUIdXT3CcIDj3qildv2YrKhSY1tFZaDXpF7N7iS1Bj_i-E&s=10", // Qidiring: LG F2J3WS1W 6.5kg White Front Load
+  lg_f2v3hs6j:    "https://www.lg.com/uz_ru/images/washing-machines/md07609804/gallery/large-m01.jpg", // Qidiring: LG F2V3HS6J 7kg Black AI DD
+  lg_f2v5hypyje:  "https://assets.smartelectronics.az/Assets/cdn-cgi?path=464b61d0-f057-42ba-85ce-f99f6b33ea75.png", // Qidiring: LG F2V5HYPYJE 7kg AI DD ThinQ
+  lg_f2v7gwl2p:   "https://zavq.uz/wp-content/uploads/2026/02/an-00009445.webp", // Qidiring: LG F2V7GWL2P 8.5kg AI DD
+  lg_f2t9fw9w:    "https://storage.alifshop.tj/media/images/alifshop/41857/stiralnaya-mashina-lg-f2t9fw9w-9-kg-1760335209097.png", // Qidiring: LG F2T9FW9W 9kg AI DD
+  lg_f0l9dyp2s:   "https://olcha.uz/image/675x900/products/2022-10-13/stiralnaya-mashina-lg-f0l9dyp2s-15kg-156147-0.jpeg", // Qidiring: LG F0L9DYP2S 15kg Twin Wash
+  lg_l5c0905psgc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJYZ50f8kOsSzM_BdnwBwboM8a_Elrz0yayTDlV9WcH2g6N3c-Lu15czY&s=10", // Qidiring: LG L5C0905PSGC Washer Dryer Combo
+  // ─── Beston — Old yuklanadigan ───
+  bst_bwm6612d12: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQApYy63e9LokCOl6uCwP41vF3DLONuosbykOn4X1-DOfBg8UkWRAspzhoX&s=10", // Qidiring: Beston BWM-6612D12 12kg Front Load
+  bst_bwm6010d14: "https://cdn.phototourl.com/free/2026-07-11-fdbac5a2-0f62-4ada-905d-78a559cb4f2a.png", // Qidiring: Beston BWM-6010D14 10kg Front Load
+  // ─── Bench — Yuqoridan ───
+  ben_bwb7005g: "https://images.uzum.uz/d8dtnpbsv8vo2t0ift50/t_product_540_high.jpg", // Qidiring: Bench BW-B7005G 7kg Top Load
+  ben_bwb1005g: "https://frankfurt.apollo.olxcdn.com/v1/files/rx4vwqzf6e0j3-UZ/image", // Qidiring: Bench BW-B1005G 10kg Top Load
+  ben_bwb1855g: "https://images.uzum.uz/cq715g40u44j0e4m6reg/t_product_540_high.jpg", // Qidiring: Bench BW-B1855G 18kg Commercial Top Load
+  // ─── Samsung — Yuqoridan ───
+  sam_wa80f18b9bgm: "https://images.samsung.com/is/image/samsung/p6pim/my/wa80f21b9bfq/gallery/my-wa80f25-wa80f21b9bfq-545279070?$1164_776_PNG$", // Qidiring: Samsung WA80F18B9BGM 18kg Top Load
+
+  // ═══════════════════════ VSTROYENNIY TEXNIKA ═══════════════════════
+  // ─── Ferre — Plita ───
+  fer_nl901t:    "https://ferre.uz/wp-content/uploads/2022/05/NL90-1X.jpg", // Qidiring: Ferre NL90-1T Gas Range 90cm
+  fer_nl901full: "https://cdn.phototourl.com/free/2026-07-11-f5c20c5c-9874-4290-83e2-d0aba0989d68.png", // Qidiring: Ferre NL90-1 Full Gas Electric Oven 90cm
+  fer_fullconv:  "https://bymart.co.zm/cdn/shop/files/F9S50G2_grande.jpg?v=1749631641", // Qidiring: Ferre Full Convection Gas Range 90cm
+  // ─── Hisense — Plita ───
+  his_hfs90ga5ebl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLGTsnLZ3OPViuOyRNxRRmxnG77hDZn-jSSKc7J_ao7e8XEXSwUcqlTfh0&s=10", // Qidiring: Hisense HFS90GA5EBL Black Gas Range
+  his_hfg60121x:   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8YI-IUsADoa-25j6vOkRnOT0pb0N2B4guOcbNJd76407tak0gn1LsiGY&s=10", // Qidiring: Hisense HFG60121X Gas Range 60cm
+  // ─── Immer — Plita ───
+  imm_x90: "https://assets.asaxiy.uz/product/items/desktop/96a3be3cf272e017046d1b2674a52bd32024040317213154944u6n1M8V0Ub.jpg.webp", // Qidiring: Immer X90 White Gas Electric Range
+  imm_b90: "https://assets.asaxiy.uz/product/items/desktop/96a3be3cf272e017046d1b2674a52bd32024040317142480039pY8W5WKHxB.png.webp", // Qidiring: Immer B90 Black Gas Electric Range
+  // ─── Beston — Qo'shma pech (Hob) ───
+  bst_bhs11090bt: "https://cdn.asaxiy.uz/asaxiy-content/product/items/mobile/c81e728d9d4c2f636f067f89cc14862c2024120513570373341XIzfYv44vV.jpg.webp", // Qidiring: Beston BHS-11090BT Gas Hob 90cm
+  bst_bhs11060bt: "https://assets.asaxiy.uz/product/items/desktop/faeac4e1eef307c2ab7b0a3821e6c6672025042217021780762DMPBBrH1du.jpg.webp", // Qidiring: Beston BHS-11060BT Gas Hob 60cm
+  bst_bhc10660bt: "https://cdn.phototourl.com/free/2026-07-11-58dba5a3-cf7c-40ec-afc2-7c666ac2eadd.png", // Qidiring: Beston BHC-10660BT Wok Burner Hob
+  // ─── Beston — Vityajka (Hood) ───
+  bst_brh60b1380:   "blob:https://gemini.google.com/b99627da-7557-440b-8eaf-6b32fbb5b706", // Qidiring: Beston BRH-60B13801 Hood Sensor Voice
+  bst_brh60bct1kbs: "https://assets.asaxiy.uz/product/items/desktop/e45ee7ce7e88149af8dd32b27f9512ce20250423104240201863JqZhGxCho.jpg.webp", // Qidiring: Beston BRH-60BCT1KBS Hood 60cm
+  bst_brh90bct1kbs: "https://cdn.asaxiy.uz/asaxiy-content/product/items/mobile/c4ca4238a0b923820dcc509a6f75849b2024032913274041220BedyVfvQsd.jpg.webp", // Qidiring: Beston BRH-90BCT1KBS Hood 90cm
+  bst_brh60stks:    "https://cdn.asaxiy.uz/asaxiy-content/product/items/mobile/6512bd43d9caa6e02c990b0a82652dca2023101911270440534AzBXkrKEdK.jpg.webp", // Qidiring: Beston BRH-60BSTKS800SS Slimline Hood
+  bst_bhr60w1055b:  "https://cdn.asaxiy.uz/asaxiy-content/product/main_image/mobile/68089dcbaea72.jpg.webp", // Qidiring: Beston BHR-60W1055B Black Slim Hood
 };
 
 /* Model nomi yozilgan kulrang placeholder — rasm topilmaguncha shu ko'rinadi */
@@ -161,276 +242,276 @@ function ph(text){
 
 const PRODS=[
 // ═══ KONDITSIONER WALL ═══
-{id:1,cat:"conditioner",sub:"wall",brand:"hofmann",usd:385,r:4.4,rv:31,s:true,tr:false,nw:false,img:IM.w2,
+{id:1,cat:"conditioner",sub:"wall",brand:"hofmann",usd:385,r:4.4,rv:31,s:true,tr:false,nw:false,img:PIMG.hof_c09||ph("Hofmann Compact 09 3D Inverter Wi-Fi"),
 nm:{uz:"Hofmann Compact 09 — 3D Inverter Wi-Fi",ru:"Hofmann Compact 09 — 3D Inverter Wi-Fi",en:"Hofmann Compact 09 — 3D Inverter Wi-Fi"},
 dsc:{uz:"9000 BTU, 3D Inverter, 130–265V keng kuchlanish, R32, Wi-Fi, PTC isitgich. 3 yil kafolat.",ru:"9000 BTU, 3D Inverter, 130–265В, R32, Wi-Fi, PTC. 3 года гарантии.",en:"9000 BTU, 3D Inverter, 130–265V, R32, Wi-Fi, PTC heater. 3yr warranty."},
 sp:{uz:["9000 BTU","3D Inverter","130–265V","R32","Wi-Fi","PTC Isitgich","3 Yil"],ru:["9000 BTU","3D Inverter","130–265В","R32","Wi-Fi","PTC","3 года"],en:["9000 BTU","3D Inverter","130–265V","R32","Wi-Fi","PTC Heater","3yr"]}},
-{id:2,cat:"conditioner",sub:"wall",brand:"hofmann",usd:420,r:4.6,rv:52,s:true,tr:true,nw:false,img:IM.w2,
+{id:2,cat:"conditioner",sub:"wall",brand:"hofmann",usd:420,r:4.6,rv:52,s:true,tr:true,nw:false,img:PIMG.hof_c12||ph("Hofmann Compact 12 3D Inverter Wi-Fi"),
 nm:{uz:"Hofmann Compact 12 — 3D Inverter Wi-Fi",ru:"Hofmann Compact 12 — 3D Inverter Wi-Fi",en:"Hofmann Compact 12 — 3D Inverter Wi-Fi"},
 dsc:{uz:"12000 BTU eng ommabop! 3D Inverter, 130–265V, R32, Wi-Fi. A++ energiya sinfi.",ru:"12000 BTU самая популярная! 3D Inverter, 130–265В, R32, Wi-Fi. A++.",en:"12000 BTU most popular! 3D Inverter, 130–265V, R32, Wi-Fi. A++ energy."},
 sp:{uz:["12000 BTU","3D Inverter","130–265V","R32","Wi-Fi","A++","3 Yil"],ru:["12000 BTU","3D Inverter","130–265В","R32","Wi-Fi","A++","3 года"],en:["12000 BTU","3D Inverter","130–265V","R32","Wi-Fi","A++","3yr"]}},
-{id:3,cat:"conditioner",sub:"wall",brand:"hofmann",usd:520,r:4.5,rv:23,s:true,tr:false,nw:false,img:IM.w2,
+{id:3,cat:"conditioner",sub:"wall",brand:"hofmann",usd:520,r:4.5,rv:23,s:true,tr:false,nw:false,img:PIMG.hof_c18||ph("Hofmann Compact 18 3D Inverter Wi-Fi"),
 nm:{uz:"Hofmann Compact 18 — 3D Inverter Wi-Fi",ru:"Hofmann Compact 18 — 3D Inverter Wi-Fi",en:"Hofmann Compact 18 — 3D Inverter Wi-Fi"},
 dsc:{uz:"18000 BTU katta xonalar uchun. 3D Inverter, 130–265V, R32, Wi-Fi.",ru:"18000 BTU для больших комнат. 3D Inverter, 130–265В, R32, Wi-Fi.",en:"18000 BTU for large rooms. 3D Inverter, 130–265V, R32, Wi-Fi."},
 sp:{uz:["18000 BTU","3D Inverter","130–265V","R32","Wi-Fi","A++","3 Yil"],ru:["18000 BTU","3D Inverter","130–265В","R32","Wi-Fi","A++","3 года"],en:["18000 BTU","3D Inverter","130–265V","R32","Wi-Fi","A++","3yr"]}},
-{id:4,cat:"conditioner",sub:"wall",brand:"hofmann",usd:690,r:4.5,rv:16,s:true,tr:false,nw:false,img:IM.w2,
+{id:4,cat:"conditioner",sub:"wall",brand:"hofmann",usd:690,r:4.5,rv:16,s:true,tr:false,nw:false,img:PIMG.hof_c24||ph("Hofmann Compact 24 3D Inverter Wi-Fi"),
 nm:{uz:"Hofmann Compact 24 — 3D Inverter Wi-Fi",ru:"Hofmann Compact 24 — 3D Inverter Wi-Fi",en:"Hofmann Compact 24 — 3D Inverter Wi-Fi"},
 dsc:{uz:"24000 BTU kuchli. Katta maydonlar uchun. PTC isitgich, Wi-Fi.",ru:"24000 BTU для больших площадей. PTC нагреватель, Wi-Fi.",en:"24000 BTU for large areas. PTC heater, Wi-Fi."},
 sp:{uz:["24000 BTU","3D Inverter","130–265V","R32","Wi-Fi","PTC","A++"],ru:["24000 BTU","3D Inverter","130–265В","R32","Wi-Fi","PTC","A++"],en:["24000 BTU","3D Inverter","130–265V","R32","Wi-Fi","PTC","A++"]}},
-{id:5,cat:"conditioner",sub:"wall",brand:"hofmann",usd:555,r:4.7,rv:44,s:true,tr:true,nw:false,img:IM.w3,
+{id:5,cat:"conditioner",sub:"wall",brand:"hofmann",usd:555,r:4.7,rv:44,s:true,tr:true,nw:false,img:PIMG.hof_scb12||ph("Hofmann S-Class Black 12 UV 3D G10"),
 nm:{uz:"Hofmann S-Class Black 12 — UV 3D G10",ru:"Hofmann S-Class Black 12 — UV 3D G10",en:"Hofmann S-Class Black 12 — UV 3D G10"},
 dsc:{uz:"Premium qora. UV Lamp dezinfeksiya, 3D G10 Inverter, Wi-Fi Smart.",ru:"Премиум чёрный. UV Lamp, 3D G10 Inverter, Wi-Fi.",en:"Premium black. UV Lamp disinfection, 3D G10 Inverter, Wi-Fi."},
 sp:{uz:["12000 BTU","3D G10 Inverter","UV LAMP","R32","Wi-Fi","Qora","A++"],ru:["12000 BTU","3D G10 Inverter","UV LAMP","R32","Wi-Fi","Чёрный","A++"],en:["12000 BTU","3D G10 Inverter","UV LAMP","R32","Wi-Fi","Black","A++"]}},
-{id:6,cat:"conditioner",sub:"wall",brand:"hofmann",usd:710,r:4.7,rv:28,s:true,tr:false,nw:false,img:IM.w3,
+{id:6,cat:"conditioner",sub:"wall",brand:"hofmann",usd:710,r:4.7,rv:28,s:true,tr:false,nw:false,img:PIMG.hof_scb18||ph("Hofmann S-Class Black 18 UV 3D G10"),
 nm:{uz:"Hofmann S-Class Black 18 — UV 3D G10",ru:"Hofmann S-Class Black 18 — UV 3D G10",en:"Hofmann S-Class Black 18 — UV 3D G10"},
 dsc:{uz:"18000 BTU S-Class qora. UV Lamp, 3D G10 Inverter, Wi-Fi Smart.",ru:"18000 BTU S-Class чёрный. UV Lamp, 3D G10 Inverter, Wi-Fi.",en:"18000 BTU S-Class black. UV Lamp, 3D G10 Inverter, Wi-Fi."},
 sp:{uz:["18000 BTU","3D G10 Inverter","UV LAMP","R32","Wi-Fi","Qora","A++"],ru:["18000 BTU","3D G10 Inverter","UV LAMP","R32","Wi-Fi","Чёрный","A++"],en:["18000 BTU","3D G10 Inverter","UV LAMP","R32","Wi-Fi","Black","A++"]}},
-{id:7,cat:"conditioner",sub:"wall",brand:"hofmann",usd:510,r:4.6,rv:33,s:true,tr:false,nw:false,img:IM.w1,
+{id:7,cat:"conditioner",sub:"wall",brand:"hofmann",usd:510,r:4.6,rv:33,s:true,tr:false,nw:false,img:PIMG.hof_solg12||ph("Hofmann Solo Gold 12 3D G10 Wi-Fi"),
 nm:{uz:"Hofmann Solo Gold 12 — 3D G10 Wi-Fi",ru:"Hofmann Solo Gold 12 — 3D G10 Wi-Fi",en:"Hofmann Solo Gold 12 — 3D G10 Wi-Fi"},
 dsc:{uz:"Oltin dizayn. 3D G10 Inverter, Wi-Fi Smart, R32.",ru:"Золотой дизайн. 3D G10 Inverter, Wi-Fi Smart, R32.",en:"Gold design. 3D G10 Inverter, Wi-Fi Smart, R32."},
 sp:{uz:["12000 BTU","3D G10 Inverter","R32","Wi-Fi","Oltin Dizayn","A++","3+10 Yil"],ru:["12000 BTU","3D G10 Inverter","R32","Wi-Fi","Золотой","A++","3+10 лет"],en:["12000 BTU","3D G10 Inverter","R32","Wi-Fi","Gold Design","A++","3+10yr"]}},
-{id:8,cat:"conditioner",sub:"wall",brand:"hofmann",usd:490,r:4.6,rv:37,s:true,tr:true,nw:false,img:IM.w1,
+{id:8,cat:"conditioner",sub:"wall",brand:"hofmann",usd:490,r:4.6,rv:37,s:true,tr:true,nw:false,img:PIMG.hof_eleg12||ph("Hofmann Elegance 12 G10 UV Wi-Fi"),
 nm:{uz:"Hofmann Elegance 12 — G10 UV Wi-Fi",ru:"Hofmann Elegance 12 — G10 UV Wi-Fi",en:"Hofmann Elegance 12 — G10 UV Wi-Fi"},
 dsc:{uz:"Nafis Elegance dizayn. G10 Inverter, UV Lamp, Wi-Fi. 3+10 yil kafolat.",ru:"Elegance дизайн. G10 Inverter, UV Lamp, Wi-Fi. 3+10 лет.",en:"Elegant design. G10 Inverter, UV Lamp, Wi-Fi. 3+10yr warranty."},
 sp:{uz:["12000 BTU","G10 Inverter","UV Lamp","R32","Wi-Fi","A++","3+10 Yil"],ru:["12000 BTU","G10 Inverter","UV Lamp","R32","Wi-Fi","A++","3+10 лет"],en:["12000 BTU","G10 Inverter","UV Lamp","R32","Wi-Fi","A++","3+10yr"]}},
-{id:9,cat:"conditioner",sub:"wall",brand:"hofmann",usd:770,r:4.8,rv:19,s:true,tr:false,nw:true,img:IM.w1,
+{id:9,cat:"conditioner",sub:"wall",brand:"hofmann",usd:770,r:4.8,rv:19,s:true,tr:false,nw:true,img:PIMG.hof_inf12||ph("Hofmann Infinity 12 G10 Wi-Fi Premium"),
 nm:{uz:"Hofmann Infinity 12 — G10 Wi-Fi Premium",ru:"Hofmann Infinity 12 — G10 Wi-Fi Premium",en:"Hofmann Infinity 12 — G10 Wi-Fi Premium"},
 dsc:{uz:"Eng premium Hofmann modeli. Infinity dizayn, G10 Inverter, Wi-Fi Smart.",ru:"Топовая модель. Дизайн Infinity, G10 Inverter, Wi-Fi.",en:"Top Hofmann model. Infinity design, G10 Inverter, Wi-Fi Smart."},
 sp:{uz:["12000 BTU","G10 Inverter","Infinity Dizayn","R32","Wi-Fi","A++","3+10 Yil"],ru:["12000 BTU","G10 Inverter","Infinity","R32","Wi-Fi","A++","3+10 лет"],en:["12000 BTU","G10 Inverter","Infinity Design","R32","Wi-Fi","A++","3+10yr"]}},
-{id:10,cat:"conditioner",sub:"wall",brand:"lg",usd:590,r:4.8,rv:91,s:true,tr:true,nw:false,img:IM.w4,
+{id:10,cat:"conditioner",sub:"wall",brand:"lg",usd:590,r:4.8,rv:91,s:true,tr:true,nw:false,img:PIMG.lg_ab12bk||ph("LG AB12BK Objet Collection Beige"),
 nm:{uz:"LG AB12BK Objet Collection — Bej 36m²",ru:"LG AB12BK Objet Collection — Бежевый 36м²",en:"LG AB12BK Objet Collection — Beige 36m²"},
 dsc:{uz:"LG Objet Collection bej rang. DUAL Inverter, UVnano, ThinQ Wi-Fi. 10 yil kompressor.",ru:"LG Objet Collection бежевый. DUAL Inverter, UVnano, ThinQ Wi-Fi. 10 лет.",en:"LG Objet Collection beige. DUAL Inverter, UVnano, ThinQ Wi-Fi. 10yr compressor."},
 sp:{uz:["12000 BTU","DUAL Inverter","UVnano™","ThinQ™","36 m²","Bej","10 Yil"],ru:["12000 BTU","DUAL Inverter","UVnano™","ThinQ™","36 м²","Бежевый","10 лет"],en:["12000 BTU","DUAL Inverter","UVnano™","ThinQ™","36 m²","Beige","10yr"]}},
-{id:11,cat:"conditioner",sub:"wall",brand:"lg",usd:720,r:4.9,rv:114,s:true,tr:true,nw:false,img:IM.w4,
+{id:11,cat:"conditioner",sub:"wall",brand:"lg",usd:720,r:4.9,rv:114,s:true,tr:true,nw:false,img:PIMG.lg_ag12bk||ph("LG AG12BK Objet Collection Black"),
 nm:{uz:"LG AG12BK Objet Collection — Qora 36m²",ru:"LG AG12BK Objet Collection — Чёрный 36м²",en:"LG AG12BK Objet Collection — Black 36m²"},
 dsc:{uz:"LG Objet Collection qora. DUAL Inverter 10 yil, UVnano, ThinQ Smart.",ru:"LG Objet Collection чёрный. DUAL Inverter 10 лет, UVnano, ThinQ.",en:"LG Objet black premium. DUAL Inverter 10yr, UVnano, ThinQ."},
 sp:{uz:["12000 BTU","DUAL Inverter","UVnano™","ThinQ™","36 m²","Qora","10 Yil"],ru:["12000 BTU","DUAL Inverter","UVnano™","ThinQ™","36 м²","Чёрный","10 лет"],en:["12000 BTU","DUAL Inverter","UVnano™","ThinQ™","36 m²","Black","10yr"]}},
-{id:12,cat:"conditioner",sub:"wall",brand:"lg",usd:690,r:4.7,rv:56,s:true,tr:false,nw:false,img:IM.w1,
+{id:12,cat:"conditioner",sub:"wall",brand:"lg",usd:690,r:4.7,rv:56,s:true,tr:false,nw:false,img:PIMG.lg_ap12rk||ph("LG AP12RK ProCool Ionizer"),
 nm:{uz:"LG AP12RK ProCool — Ionizator 36m²",ru:"LG AP12RK ProCool — Ионизатор 36м²",en:"LG AP12RK ProCool — Ionizer 36m²"},
 dsc:{uz:"ProCool Ionizator, Active Energy Control, ThinQ Wi-Fi. 10 yil kompressor.",ru:"Ионизатор, Active Energy Control, ThinQ Wi-Fi. 10 лет компрессор.",en:"Ionizer, Active Energy Control, ThinQ Wi-Fi. 10yr compressor warranty."},
 sp:{uz:["12000 BTU","DUAL Inverter","Ionizator","Active Energy Control","ThinQ™","36 m²","10 Yil"],ru:["12000 BTU","DUAL Inverter","Ионизатор","Active Energy Control","ThinQ™","36 м²","10 лет"],en:["12000 BTU","DUAL Inverter","Ionizer","Active Energy Control","ThinQ™","36 m²","10yr"]}},
-{id:13,cat:"conditioner",sub:"wall",brand:"lg",usd:1236,r:4.9,rv:36,s:true,tr:false,nw:true,img:IM.w4,
+{id:13,cat:"conditioner",sub:"wall",brand:"lg",usd:1236,r:4.9,rv:36,s:true,tr:false,nw:true,img:PIMG.lg_a12ga1||ph("LG A12GA1 Art Gallery Ultra Premium"),
 nm:{uz:"LG A12GA1 Art Gallery — Ultra Premium",ru:"LG A12GA1 Art Gallery — Ультра Премиум",en:"LG A12GA1 Art Gallery — Ultra Premium"},
 dsc:{uz:"Devor san'at asari. 652×652mm ramkada chiroyli rasm. DUAL Inverter, R32, Plasmaster.",ru:"Картина на стене. Рамка 652×652мм. DUAL Inverter, R32, Plasmaster.",en:"Art gallery on wall. 652×652mm frame. DUAL Inverter, R32, Plasmaster."},
 sp:{uz:["12000 BTU","DUAL Inverter","Art Gallery Ramka","R32","652×652mm","Plasmaster","Ultra Premium"],ru:["12000 BTU","DUAL Inverter","Art Gallery","R32","652×652мм","Plasmaster","Ультра Премиум"],en:["12000 BTU","DUAL Inverter","Art Gallery","R32","652×652mm","Plasmaster","Ultra Premium"]}},
-{id:14,cat:"conditioner",sub:"wall",brand:"beston",usd:270,r:4.3,rv:68,s:true,tr:true,nw:false,img:IM.w2,
+{id:14,cat:"conditioner",sub:"wall",brand:"beston",usd:270,r:4.3,rv:68,s:true,tr:true,nw:false,img:PIMG.bst_vic12||ph("Beston Victory 12 Full DC Inverter"),
 nm:{uz:"Beston Victory 12 — Full DC Inverter R32",ru:"Beston Victory 12 — Full DC Inverter R32",en:"Beston Victory 12 — Full DC Inverter R32"},
 dsc:{uz:"A++. Full DC Inverter, Gree kompressor, R32, Wi-Fi, Golden Fin, 12 qator radiator.",ru:"A++. Full DC Inverter, Gree, R32, Wi-Fi, Golden Fin, 12 рядов.",en:"A++. Full DC Inverter, Gree compressor, R32, Wi-Fi, Golden Fin, 12-row."},
 sp:{uz:["12000 BTU","Full DC Inverter","Gree Kompressor","R32","Wi-Fi","Golden Fin","A++"],ru:["12000 BTU","Full DC Inverter","Gree","R32","Wi-Fi","Golden Fin","A++"],en:["12000 BTU","Full DC Inverter","Gree","R32","Wi-Fi","Golden Fin","A++"]}},
-{id:15,cat:"conditioner",sub:"wall",brand:"aufit",usd:330,r:4.4,rv:29,s:true,tr:false,nw:false,img:IM.w2,
+{id:15,cat:"conditioner",sub:"wall",brand:"aufit",usd:330,r:4.4,rv:29,s:true,tr:false,nw:false,img:PIMG.auf_h12gmcc||ph("Aufit H12 GMCC DC Inverter"),
 nm:{uz:"Aufit H12 GMCC — DC Inverter PTC Wi-Fi",ru:"Aufit H12 GMCC — DC Inverter PTC Wi-Fi",en:"Aufit H12 GMCC — DC Inverter PTC Wi-Fi"},
 dsc:{uz:"DC Inverter, GMCC kompressor, PTC isitgich, 130–265V, R32, Wi-Fi.",ru:"DC Inverter, GMCC, PTC, 130–265В, R32, Wi-Fi.",en:"DC Inverter, GMCC compressor, PTC heater, 130–265V, R32, Wi-Fi."},
 sp:{uz:["12000 BTU","DC Inverter","GMCC","PTC","130–265V","R32","Wi-Fi"],ru:["12000 BTU","DC Inverter","GMCC","PTC","130–265В","R32","Wi-Fi"],en:["12000 BTU","DC Inverter","GMCC","PTC Heater","130–265V","R32","Wi-Fi"]}},
-{id:16,cat:"conditioner",sub:"wall",brand:"aufit",usd:430,r:4.5,rv:21,s:true,tr:false,nw:false,img:IM.w2,
+{id:16,cat:"conditioner",sub:"wall",brand:"aufit",usd:430,r:4.5,rv:21,s:true,tr:false,nw:false,img:PIMG.auf_h18sanyo||ph("Aufit H18 SANYO DC Inverter"),
 nm:{uz:"Aufit H18 SANYO — DC Inverter PTC Wi-Fi",ru:"Aufit H18 SANYO — DC Inverter PTC Wi-Fi",en:"Aufit H18 SANYO — DC Inverter PTC Wi-Fi"},
 dsc:{uz:"18000 BTU. DC Inverter, SANYO kompressor, PTC, 130–265V, R32, Wi-Fi.",ru:"18000 BTU. DC Inverter, SANYO, PTC, 130–265В, R32, Wi-Fi.",en:"18000 BTU. DC Inverter, SANYO compressor, PTC, 130–265V, R32, Wi-Fi."},
 sp:{uz:["18000 BTU","DC Inverter","SANYO","PTC","130–265V","R32","Wi-Fi"],ru:["18000 BTU","DC Inverter","SANYO","PTC","130–265В","R32","Wi-Fi"],en:["18000 BTU","DC Inverter","SANYO","PTC Heater","130–265V","R32","Wi-Fi"]}},
-{id:17,cat:"conditioner",sub:"wall",brand:"aufit",usd:500,r:4.6,rv:17,s:true,tr:false,nw:true,img:IM.w1,
+{id:17,cat:"conditioner",sub:"wall",brand:"aufit",usd:500,r:4.6,rv:17,s:true,tr:false,nw:true,img:PIMG.auf_h12pana||ph("Aufit H12 Panasonic Gentle Wind"),
 nm:{uz:"Aufit H12 Panasonic — Gentle Wind DC Wi-Fi",ru:"Aufit H12 Panasonic — Gentle Wind DC Wi-Fi",en:"Aufit H12 Panasonic — Gentle Wind DC Wi-Fi"},
 dsc:{uz:"Panasonic kompressor, Gentle Wind texnologiyasi, DC Inverter, 130–265V, R32, Wi-Fi.",ru:"Panasonic, Gentle Wind, DC Inverter, 130–265В, R32, Wi-Fi.",en:"Panasonic compressor, Gentle Wind technology, DC Inverter, 130–265V, R32, Wi-Fi."},
 sp:{uz:["12000 BTU","Panasonic","Gentle Wind","DC Inverter","130–265V","R32","Wi-Fi"],ru:["12000 BTU","Panasonic","Gentle Wind","DC Inverter","130–265В","R32","Wi-Fi"],en:["12000 BTU","Panasonic","Gentle Wind","DC Inverter","130–265V","R32","Wi-Fi"]}},
 // ═══ KONDITSIONER FLOOR ═══
-{id:18,cat:"conditioner",sub:"floor",brand:"beston",usd:750,r:4.6,rv:44,s:true,tr:true,nw:false,img:IM.f1,
+{id:18,cat:"conditioner",sub:"floor",brand:"beston",usd:750,r:4.6,rv:44,s:true,tr:true,nw:false,img:PIMG.bst_abox24||ph("Beston Air Box 24 Kolonnik Full DC Inverter"),
 nm:{uz:"Beston Air Box 24 — Kolonnik Full DC",ru:"Beston Air Box 24 — Напольный Full DC",en:"Beston Air Box 24 — Floor Full DC Inverter"},
 dsc:{uz:"Kolonnik konditsioner. Full DC Inverter, GMCC Toshiba, PTC, Golden Fin, Wi-Fi, 3D Air Flow.",ru:"Напольный. Full DC Inverter, GMCC Toshiba, PTC, Golden Fin, Wi-Fi, 3D Air Flow.",en:"Floor-standing. Full DC Inverter, GMCC Toshiba, PTC, Golden Fin, Wi-Fi, 3D Air Flow."},
 sp:{uz:["24000 BTU","Full DC Inverter","GMCC Toshiba","PTC","Golden Fin","Wi-Fi","3D Air Flow"],ru:["24000 BTU","Full DC Inverter","GMCC Toshiba","PTC","Golden Fin","Wi-Fi","3D Air Flow"],en:["24000 BTU","Full DC Inverter","GMCC Toshiba","PTC","Golden Fin","Wi-Fi","3D Air Flow"]}},
-{id:19,cat:"conditioner",sub:"floor",brand:"beston",usd:1600,r:4.7,rv:27,s:true,tr:false,nw:false,img:IM.f1,
+{id:19,cat:"conditioner",sub:"floor",brand:"beston",usd:1600,r:4.7,rv:27,s:true,tr:false,nw:false,img:PIMG.bst_abox48||ph("Beston Air Box 48 Kolonnik"),
 nm:{uz:"Beston Air Box 48 — Kuchli Kolonnik",ru:"Beston Air Box 48 — Мощный Напольный",en:"Beston Air Box 48 — Powerful Floor Unit"},
 dsc:{uz:"48000 BTU. Katta binolar uchun. Full DC Inverter, GMCC, PTC, Wi-Fi, Ovozli boshqaruv.",ru:"48000 BTU для больших зданий. Full DC Inverter, GMCC, PTC, Wi-Fi.",en:"48000 BTU for large buildings. Full DC Inverter, GMCC, PTC, Wi-Fi, voice."},
 sp:{uz:["48000 BTU","Full DC Inverter","GMCC Toshiba","PTC","Golden Fin","Wi-Fi","Ovozli"],ru:["48000 BTU","Full DC Inverter","GMCC Toshiba","PTC","Golden Fin","Wi-Fi","Голосовое"],en:["48000 BTU","Full DC Inverter","GMCC Toshiba","PTC","Golden Fin","Wi-Fi","Voice Control"]}},
-{id:20,cat:"conditioner",sub:"floor",brand:"ttech",usd:700,r:4.5,rv:32,s:true,tr:false,nw:true,img:IM.f1,
+{id:20,cat:"conditioner",sub:"floor",brand:"ttech",usd:700,r:4.5,rv:32,s:true,tr:false,nw:true,img:PIMG.tt_p24wfs1||ph("T-Tech 7AC4P24WFS1 White Floor Standing"),
 nm:{uz:"T-Tech 7AC4P24WFS1 — Oq Kolonnik Wi-Fi",ru:"T-Tech 7AC4P24WFS1 — Белый Напольный Wi-Fi",en:"T-Tech 7AC4P24WFS1 — White Floor Wi-Fi"},
 dsc:{uz:"Full DC Inverter kolonnik. TEN isitgich, Wi-Fi, 135–265V, Super sokin, Turbo sovutish.",ru:"Full DC Inverter. TEN, Wi-Fi, 135–265В, тихий, Turbo.",en:"Full DC Inverter floor unit. TEN heater, Wi-Fi, 135–265V, super quiet, Turbo cooling."},
 sp:{uz:["24000 BTU","Full DC Inverter","TEN Isitgich","Wi-Fi","135–265V","Super Sokin","Turbo"],ru:["24000 BTU","Full DC Inverter","TEN","Wi-Fi","135–265В","Тихий","Turbo"],en:["24000 BTU","Full DC Inverter","TEN Heater","Wi-Fi","135–265V","Super Quiet","Turbo"]}},
-{id:21,cat:"conditioner",sub:"floor",brand:"ttech",usd:730,r:4.6,rv:24,s:true,tr:false,nw:true,img:IM.f1,
+{id:21,cat:"conditioner",sub:"floor",brand:"ttech",usd:730,r:4.6,rv:24,s:true,tr:false,nw:true,img:PIMG.tt_p24gwfs1||ph("T-Tech 7AC4P24GWFS1 Gold Floor Standing"),
 nm:{uz:"T-Tech 7AC4P24GWFS1 — Oltin Kolonnik Wi-Fi",ru:"T-Tech 7AC4P24GWFS1 — Золотой Напольный Wi-Fi",en:"T-Tech 7AC4P24GWFS1 — Gold Floor Wi-Fi"},
 dsc:{uz:"Premium oltin-kulrang kolonnik. Full DC Inverter, TEN, Wi-Fi, 135–265V, Turbo.",ru:"Золотистый премиум напольный. Full DC Inverter, TEN, Wi-Fi, 135–265В.",en:"Gold-grey premium floor unit. Full DC Inverter, TEN heater, Wi-Fi, 135–265V."},
 sp:{uz:["24000 BTU","Full DC Inverter","TEN","Wi-Fi","135–265V","Oltin Dizayn","Turbo"],ru:["24000 BTU","Full DC Inverter","TEN","Wi-Fi","135–265В","Золотой","Turbo"],en:["24000 BTU","Full DC Inverter","TEN Heater","Wi-Fi","135–265V","Gold Design","Turbo"]}},
 // ═══ XOLODILNIK ═══
-{id:22,cat:"fridge",sub:"top",brand:"beston",usd:440,r:4.6,rv:51,s:true,tr:true,nw:false,img:IM.fr1,
+{id:22,cat:"fridge",sub:"top",brand:"beston",usd:440,r:4.6,rv:51,s:true,tr:true,nw:false,img:PIMG.bst_bc543inv||ph("Beston BC-543INV No Frost Inverter 413L"),
 nm:{uz:"Beston BC-543INV — No Frost Inverter 413L",ru:"Beston BC-543INV — No Frost Inverter 413L",en:"Beston BC-543INV — No Frost Inverter 413L"},
 dsc:{uz:"413L, No Frost, Inverter, Inox. 700×630×1780 mm. Ustdan muzlatgich.",ru:"413 л, No Frost, Inverter, Inox. 700×630×1780 мм. Верхняя морозилка.",en:"413L, No Frost, Inverter, Inox. 700×630×1780 mm. Top-freezer."},
 sp:{uz:["413L","No Frost","Inverter","700×630×1780mm","Inox","Display","Ustdan muzlatgich"],ru:["413 л","No Frost","Inverter","700×630×1780мм","Inox","Display","Верхняя морозилка"],en:["413L","No Frost","Inverter","700×630×1780mm","Inox","Display","Top-Freezer"]}},
-{id:23,cat:"fridge",sub:"top",brand:"beston",usd:450,r:4.5,rv:38,s:true,tr:false,nw:false,img:IM.fr1,
+{id:23,cat:"fridge",sub:"top",brand:"beston",usd:450,r:4.5,rv:38,s:true,tr:false,nw:false,img:PIMG.bst_bc543dnv||ph("Beston BC-543DNV No Frost Dark Inox"),
 nm:{uz:"Beston BC-543DNV — No Frost Dark Inox 413L",ru:"Beston BC-543DNV — No Frost Dark Inox 413L",en:"Beston BC-543DNV — No Frost Dark Inox 413L"},
 dsc:{uz:"413L, No Frost, Dark Inox, Inverter. Zamonaviy dizayn.",ru:"413 л, No Frost, Dark Inox, Inverter. Современный дизайн.",en:"413L, No Frost, Dark Inox, Inverter. Modern design."},
 sp:{uz:["413L","No Frost","Inverter","700×630×1780mm","Dark Inox","A+","Ustdan muzlatgich"],ru:["413 л","No Frost","Inverter","700×630×1780мм","Dark Inox","A+","Верхняя морозилка"],en:["413L","No Frost","Inverter","700×630×1780mm","Dark Inox","A+","Top-Freezer"]}},
-{id:24,cat:"fridge",sub:"top",brand:"beston",usd:490,r:4.6,rv:43,s:true,tr:false,nw:false,img:IM.fr1,
+{id:24,cat:"fridge",sub:"top",brand:"beston",usd:490,r:4.6,rv:43,s:true,tr:false,nw:false,img:PIMG.bst_bc815inv||ph("Beston BC-815INV No Frost Inverter 527L"),
 nm:{uz:"Beston BC-815INV — No Frost Inverter 527L XXL",ru:"Beston BC-815INV — No Frost Inverter 527L XXL",en:"Beston BC-815INV — No Frost Inverter 527L XXL"},
 dsc:{uz:"527L katta hajm, No Frost, Inverter, Dark Inox. XXL size seriyasi.",ru:"527 л, No Frost, Inverter, Dark Inox. Серия XXL.",en:"527L large, No Frost, Inverter, Dark Inox. XXL size series."},
 sp:{uz:["527L","No Frost","Inverter","750×700×1830mm","Dark Inox","XXL Size","A+"],ru:["527 л","No Frost","Inverter","750×700×1830мм","Dark Inox","XXL","A+"],en:["527L","No Frost","Inverter","750×700×1830mm","Dark Inox","XXL Size","A+"]}},
-{id:25,cat:"fridge",sub:"top",brand:"beston",usd:540,r:4.7,rv:29,s:true,tr:false,nw:false,img:IM.fr1,
+{id:25,cat:"fridge",sub:"top",brand:"beston",usd:540,r:4.7,rv:29,s:true,tr:false,nw:false,img:PIMG.bst_bc865dnv||ph("Beston BC-865DNV No Frost Dark Inox 635L"),
 nm:{uz:"Beston BC-865DNV — No Frost Dark Inox 635L",ru:"Beston BC-865DNV — No Frost Dark Inox 635L",en:"Beston BC-865DNV — No Frost Dark Inox 635L"},
 dsc:{uz:"635L eng katta No Frost. Dark Inox, Inverter, XXL Size. Katta oilalar uchun.",ru:"635 л самый большой. Dark Inox, Inverter, XXL. Для большой семьи.",en:"635L largest No Frost. Dark Inox, Inverter, XXL Size."},
 sp:{uz:["635L","No Frost","Inverter","830×700×1870mm","Dark Inox","XXL Size","A+"],ru:["635 л","No Frost","Inverter","830×700×1870мм","Dark Inox","XXL","A+"],en:["635L","No Frost","Inverter","830×700×1870mm","Dark Inox","XXL Size","A+"]}},
-{id:26,cat:"fridge",sub:"bot",brand:"beston",usd:305,r:4.3,rv:44,s:true,tr:false,nw:false,img:IM.fr3,
+{id:26,cat:"fridge",sub:"bot",brand:"beston",usd:305,r:4.3,rv:44,s:true,tr:false,nw:false,img:PIMG.bst_bn483slv||ph("Beston BN-483SLV No Frost Silver 239L"),
 nm:{uz:"Beston BN-483SLV — No Frost Silver 239L",ru:"Beston BN-483SLV — No Frost Silver 239L",en:"Beston BN-483SLV — No Frost Silver 239L"},
 dsc:{uz:"239L, pastdan muzlatgich, No Frost, Silver, Inverter. Iqtisodiy.",ru:"239 л, нижняя морозилка, No Frost, Silver, Inverter.",en:"239L, bottom freezer, No Frost, Silver, Inverter."},
 sp:{uz:["239L","No Frost","Inverter","576×637×1740mm","Silver","A+","Pastdan muzlatgich"],ru:["239 л","No Frost","Inverter","576×637×1740мм","Silver","A+","Нижняя морозилка"],en:["239L","No Frost","Inverter","576×637×1740mm","Silver","A+","Bottom-Freezer"]}},
-{id:27,cat:"fridge",sub:"bot",brand:"beston",usd:400,r:4.5,rv:37,s:true,tr:false,nw:false,img:IM.fr3,
+{id:27,cat:"fridge",sub:"bot",brand:"beston",usd:400,r:4.5,rv:37,s:true,tr:false,nw:false,img:PIMG.bst_bn567blv||ph("Beston BN-567BLV No Frost Black Glass"),
 nm:{uz:"Beston BN-567BLV — No Frost Black Glass 384L VIP",ru:"Beston BN-567BLV — No Frost Black Glass 384L VIP",en:"Beston BN-567BLV — No Frost Black Glass 384L VIP"},
 dsc:{uz:"384L, qora oyna, No Frost, Inverter, VIP texnologiya. Pastdan muzlatgich.",ru:"384 л, чёрное стекло, No Frost, Inverter, VIP технология.",en:"384L, black glass, No Frost, Inverter, VIP technology."},
 sp:{uz:["384L","No Frost","Inverter","600×680×1850mm","Qora Oyna","VIP","Pastdan muzlatgich"],ru:["384 л","No Frost","Inverter","600×680×1850мм","Чёрное стекло","VIP","Нижняя"],en:["384L","No Frost","Inverter","600×680×1850mm","Black Glass","VIP","Bottom-Freezer"]}},
-{id:28,cat:"fridge",sub:"bot",brand:"beston",usd:505,r:4.6,rv:31,s:true,tr:false,nw:false,img:IM.fr3,
+{id:28,cat:"fridge",sub:"bot",brand:"beston",usd:505,r:4.6,rv:31,s:true,tr:false,nw:false,img:PIMG.bst_bn595dnv||ph("Beston BN-595DNV No Frost Dark Inox 435L"),
 nm:{uz:"Beston BN-595DNV — No Frost Dark Inox 435L Premium",ru:"Beston BN-595DNV — No Frost Dark Inox 435L Premium",en:"Beston BN-595DNV — No Frost Dark Inox 435L Premium"},
 dsc:{uz:"435L premium pastdan muzlatgich. Dark Inox, No Frost, Inverter, Metal Cooling.",ru:"435 л премиум. Dark Inox, No Frost, Inverter, Metal Cooling.",en:"435L premium bottom-freezer. Dark Inox, No Frost, Inverter, Metal Cooling."},
 sp:{uz:["435L","No Frost","Inverter","700×666×1880mm","Dark Inox","Metal Cooling","Premium"],ru:["435 л","No Frost","Inverter","700×666×1880мм","Dark Inox","Metal Cooling","Premium"],en:["435L","No Frost","Inverter","700×666×1880mm","Dark Inox","Metal Cooling","Premium"]}},
-{id:29,cat:"fridge",sub:"bot",brand:"beston",usd:660,r:4.7,rv:19,s:true,tr:false,nw:true,img:IM.fr3,
+{id:29,cat:"fridge",sub:"bot",brand:"beston",usd:660,r:4.7,rv:19,s:true,tr:false,nw:true,img:PIMG.bst_bmf577glv||ph("Beston BMF-577GLV NoFrost Gray Glass"),
 nm:{uz:"Beston BMF-577GLV — NoFrost Gray Glass 401L",ru:"Beston BMF-577GLV — NoFrost Gray Glass 401L",en:"Beston BMF-577GLV — NoFrost Gray Glass 401L"},
 dsc:{uz:"401L Gray Glass, No Frost, Inverter, Metal Cooling. Perfect Slot-In dizayn.",ru:"401 л Gray Glass, No Frost, Inverter, Metal Cooling. Perfect Slot-In.",en:"401L Gray Glass, No Frost, Inverter, Metal Cooling. Perfect Slot-In."},
 sp:{uz:["401L","No Frost","Inverter","643×600×1910mm","Gray Glass","Metal Cooling","Perfect Slot-In"],ru:["401 л","No Frost","Inverter","643×600×1910мм","Gray Glass","Metal Cooling","Perfect Slot-In"],en:["401L","No Frost","Inverter","643×600×1910mm","Gray Glass","Metal Cooling","Perfect Slot-In"]}},
-{id:30,cat:"fridge",sub:"side",brand:"beston",usd:700,r:4.6,rv:42,s:true,tr:true,nw:false,img:IM.fr2,
+{id:30,cat:"fridge",sub:"side",brand:"beston",usd:700,r:4.6,rv:42,s:true,tr:true,nw:false,img:PIMG.bst_bsm897blv||ph("Beston BSM-897BLV Side by Side 503L"),
 nm:{uz:"Beston BSM-897BLV — Side-by-Side 503L",ru:"Beston BSM-897BLV — Side-by-Side 503L",en:"Beston BSM-897BLV — Side-by-Side 503L"},
 dsc:{uz:"503L, qora oyna, Side by Side, No Frost, Inverter, Perfect Slot-In.",ru:"503 л, чёрное стекло, Side by Side, No Frost, Inverter.",en:"503L, black glass, Side by Side, No Frost, Inverter, Perfect Slot-In."},
 sp:{uz:["503L","No Frost","Inverter","905×597×1902mm","Qora Oyna","Perfect Slot-In","Side by Side"],ru:["503 л","No Frost","Inverter","905×597×1902мм","Чёрное стекло","Perfect Slot-In","Side by Side"],en:["503L","No Frost","Inverter","905×597×1902mm","Black Glass","Perfect Slot-In","Side by Side"]}},
-{id:31,cat:"fridge",sub:"side",brand:"beston",usd:810,r:4.7,rv:28,s:true,tr:false,nw:false,img:IM.fr2,
+{id:31,cat:"fridge",sub:"side",brand:"beston",usd:810,r:4.7,rv:28,s:true,tr:false,nw:false,img:PIMG.bst_bsb907blmv||ph("Beston BSB-907BLMV Side by Side 584L"),
 nm:{uz:"Beston BSB-907BLMV — Side-by-Side 584L",ru:"Beston BSB-907BLMV — Side-by-Side 584L",en:"Beston BSB-907BLMV — Side-by-Side 584L"},
 dsc:{uz:"584L eng katta Side by Side. Qora matt oyna, No Frost, Inverter.",ru:"584 л крупнейший Side by Side. Чёрный матовый, No Frost, Inverter.",en:"584L largest Side by Side. Black matt glass, No Frost, Inverter."},
 sp:{uz:["584L","No Frost","Inverter","910×700×1866mm","Qora Matt","Side by Side","Premium"],ru:["584 л","No Frost","Inverter","910×700×1866мм","Чёрный матовый","Side by Side","Премиум"],en:["584L","No Frost","Inverter","910×700×1866mm","Black Matt","Side by Side","Premium"]}},
-{id:32,cat:"fridge",sub:"side",brand:"lg",usd:930,r:4.8,rv:87,s:true,tr:true,nw:false,img:IM.fr2,
+{id:32,cat:"fridge",sub:"side",brand:"lg",usd:930,r:4.8,rv:87,s:true,tr:true,nw:false,img:PIMG.lg_gcf689blcm||ph("LG GC-F689BLCM Total No Frost 451L"),
 nm:{uz:"LG GC-F689BLCM — Total No Frost 451L",ru:"LG GC-F689BLCM — Total No Frost 451L",en:"LG GC-F689BLCM — Total No Frost 451L"},
 dsc:{uz:"451L, Total No Frost, LED displeyli, Dispenser, Fresh Balancer. LG sifati.",ru:"451 л, Total No Frost, LED, Диспенсер, Fresh Balancer.",en:"451L, Total No Frost, LED display, Dispenser, Fresh Balancer."},
 sp:{uz:["451L","Total No Frost","Dispenser","LED Display","Fresh Balancer","700×700×1890mm","A++"],ru:["451 л","Total No Frost","Диспенсер","LED","Fresh Balancer","700×700×1890мм","A++"],en:["451L","Total No Frost","Dispenser","LED Display","Fresh Balancer","700×700×1890mm","A++"]}},
-{id:33,cat:"fridge",sub:"builtin",brand:"beston",usd:510,r:4.5,rv:26,s:true,tr:false,nw:false,img:IM.fr4,
+{id:33,cat:"fridge",sub:"builtin",brand:"beston",usd:510,r:4.5,rv:26,s:true,tr:false,nw:false,img:PIMG.bst_bni542wt||ph("Beston BNI-542WT Built-in NoFrost 307L"),
 nm:{uz:"Beston BNI-542WT — O'rnatiluvchi NoFrost 307L",ru:"Beston BNI-542WT — Встраиваемый NoFrost 307L",en:"Beston BNI-542WT — Built-in NoFrost 307L"},
 dsc:{uz:"307L o'rnatiluvchi. No Frost, Smart Inverter, Metal Cooling. 54×55×193 cm.",ru:"307 л встраиваемый. No Frost, Smart Inverter, Metal Cooling.",en:"307L built-in. No Frost, Smart Inverter, Metal Cooling."},
 sp:{uz:["307L","No Frost","Smart Inverter","Metal Cooling","54×55×193cm","Chiller","O'rnatiluvchi"],ru:["307 л","No Frost","Smart Inverter","Metal Cooling","54×55×193см","Chiller","Встраиваемый"],en:["307L","No Frost","Smart Inverter","Metal Cooling","54×55×193cm","Chiller","Built-in"]}},
-{id:34,cat:"fridge",sub:"builtin",brand:"beston",usd:650,r:4.6,rv:17,s:true,tr:false,nw:true,img:IM.fr4,
+{id:34,cat:"fridge",sub:"builtin",brand:"beston",usd:650,r:4.6,rv:17,s:true,tr:false,nw:true,img:PIMG.bst_bni592wt||ph("Beston BNI-592WT Built-in NoFrost 403L"),
 nm:{uz:"Beston BNI-592WT — O'rnatiluvchi NoFrost 403L",ru:"Beston BNI-592WT — Встраиваемый NoFrost 403L",en:"Beston BNI-592WT — Built-in NoFrost 403L"},
 dsc:{uz:"403L premium o'rnatiluvchi. No Frost, Smart Inverter, Metal Ichki Devor. 69×55×195 cm.",ru:"403 л встраиваемый премиум. No Frost, Smart Inverter. 69×55×195 см.",en:"403L premium built-in. No Frost, Smart Inverter. 69×55×195 cm."},
 sp:{uz:["403L","No Frost","Smart Inverter","Metal Ichki Devor","69×55×195cm","Chiller","O'rnatiluvchi"],ru:["403 л","No Frost","Smart Inverter","Metal стенка","69×55×195см","Chiller","Встраиваемый"],en:["403L","No Frost","Smart Inverter","Metal Interior","69×55×195cm","Chiller","Built-in"]}},
-{id:35,cat:"fridge",sub:"bot",brand:"ziffler",usd:345,r:4.4,rv:33,s:true,tr:false,nw:false,img:IM.fr3,
+{id:35,cat:"fridge",sub:"bot",brand:"ziffler",usd:345,r:4.4,rv:33,s:true,tr:false,nw:false,img:PIMG.zif_rfbf306i||ph("Ziffler RF-BF-306I NoFrost Inverter"),
 nm:{uz:"Ziffler RF-BF-306I — NoFrost Inverter Inox 306L",ru:"Ziffler RF-BF-306I — NoFrost Inverter Inox 306L",en:"Ziffler RF-BF-306I — NoFrost Inverter Inox 306L"},
 dsc:{uz:"306L, No Frost, Inverter, Metal Cooling. 600×600×1850mm. Inox rang.",ru:"306 л, No Frost, Inverter, Metal Cooling. 600×600×1850мм. Inox.",en:"306L, No Frost, Inverter, Metal Cooling. 600×600×1850mm. Inox."},
 sp:{uz:["306L","No Frost","Inverter","Metal Cooling","600×600×1850mm","Inox","A+"],ru:["306 л","No Frost","Inverter","Metal Cooling","600×600×1850мм","Inox","A+"],en:["306L","No Frost","Inverter","Metal Cooling","600×600×1850mm","Inox","A+"]}},
-{id:36,cat:"fridge",sub:"bot",brand:"ziffler",usd:412,r:4.5,rv:28,s:true,tr:false,nw:true,img:IM.fr3,
+{id:36,cat:"fridge",sub:"bot",brand:"ziffler",usd:412,r:4.5,rv:28,s:true,tr:false,nw:true,img:PIMG.zif_rfbf400sv||ph("Ziffler RF-BF-400SV DARK Silver"),
 nm:{uz:"Ziffler RF-BF-400SV DARK — NoFrost 409L Silver VIP",ru:"Ziffler RF-BF-400SV DARK — NoFrost 409L Silver VIP",en:"Ziffler RF-BF-400SV DARK — NoFrost 409L Silver VIP"},
 dsc:{uz:"409L, No Frost, Inverter, VIP texnologiya, Silver. 595×680×1850mm.",ru:"409 л, No Frost, Inverter, VIP технология, Silver.",en:"409L, No Frost, Inverter, VIP technology, Silver. 595×680×1850mm."},
 sp:{uz:["409L","No Frost","Inverter","VIP Texnologiya","595×680×1850mm","Silver","Metal Cooling"],ru:["409 л","No Frost","Inverter","VIP технология","595×680×1850мм","Silver","Metal Cooling"],en:["409L","No Frost","Inverter","VIP Technology","595×680×1850mm","Silver","Metal Cooling"]}},
-{id:37,cat:"fridge",sub:"bot",brand:"ziffler",usd:443,r:4.5,rv:21,s:true,tr:false,nw:true,img:IM.fr3,
+{id:37,cat:"fridge",sub:"bot",brand:"ziffler",usd:443,r:4.5,rv:21,s:true,tr:false,nw:true,img:PIMG.zif_rfbf400bg||ph("Ziffler RF-BF-400BG DARK Black Glass"),
 nm:{uz:"Ziffler RF-BF-400BG DARK — NoFrost 409L Black Glass",ru:"Ziffler RF-BF-400BG DARK — NoFrost 409L Black Glass",en:"Ziffler RF-BF-400BG DARK — NoFrost 409L Black Glass"},
 dsc:{uz:"409L, qora oyna, No Frost, Inverter, Metal Cooling. VIP texnologiya.",ru:"409 л, чёрное стекло, No Frost, Inverter, Metal Cooling.",en:"409L, black glass, No Frost, Inverter, Metal Cooling. VIP technology."},
 sp:{uz:["409L","No Frost","Inverter","Metal Cooling","595×680×1850mm","Qora Oyna","VIP"],ru:["409 л","No Frost","Inverter","Metal Cooling","595×680×1850мм","Чёрное стекло","VIP"],en:["409L","No Frost","Inverter","Metal Cooling","595×680×1850mm","Black Glass","VIP"]}},
-{id:38,cat:"fridge",sub:"side",brand:"ttech",usd:680,r:4.5,rv:22,s:true,tr:false,nw:true,img:IM.fr2,
+{id:38,cat:"fridge",sub:"side",brand:"ttech",usd:680,r:4.5,rv:22,s:true,tr:false,nw:true,img:PIMG.tt_ref595bgs1||ph("T-Tech 7REF4P595BGS1 Side by Side"),
 nm:{uz:"T-Tech 7REF4P595BGS1 — Side-by-Side 595L",ru:"T-Tech 7REF4P595BGS1 — Side-by-Side 595L",en:"T-Tech 7REF4P595BGS1 — Side-by-Side 595L"},
 dsc:{uz:"595L Side-by-Side. NoFrost, Inverter, R600a, qora oyna.",ru:"595 л Side-by-Side. NoFrost, Inverter, R600a, чёрное стекло.",en:"595L Side-by-Side. NoFrost, Inverter, R600a, black glass."},
 sp:{uz:["595L","No Frost","Inverter","R600a","Qora Oyna","Side by Side","T-Tech"],ru:["595 л","No Frost","Inverter","R600a","Чёрное стекло","Side by Side","T-Tech"],en:["595L","No Frost","Inverter","R600a","Black Glass","Side by Side","T-Tech"]}},
-{id:39,cat:"fridge",sub:"top",brand:"ttech",usd:350,r:4.4,rv:37,s:true,tr:false,nw:false,img:IM.fr1,
+{id:39,cat:"fridge",sub:"top",brand:"ttech",usd:350,r:4.4,rv:37,s:true,tr:false,nw:false,img:PIMG.tt_ref300ss1||ph("T-Tech 7REF4S300SS1 NoFrost Inverter"),
 nm:{uz:"T-Tech 7REF4S300SS1 — NoFrost Inverter 300L",ru:"T-Tech 7REF4S300SS1 — NoFrost Inverter 300L",en:"T-Tech 7REF4S300SS1 — NoFrost Inverter 300L"},
 dsc:{uz:"300L, NoFrost, Inverter, R600a, ACDC. Ustdan muzlatgich.",ru:"300 л, NoFrost, Inverter, R600a, ACDC. Верхняя морозилка.",en:"300L, NoFrost, Inverter, R600a, ACDC. Top-freezer."},
 sp:{uz:["300L","No Frost","Inverter","R600a","ACDC","Silver","Ustdan muzlatgich"],ru:["300 л","No Frost","Inverter","R600a","ACDC","Silver","Верхняя морозилка"],en:["300L","No Frost","Inverter","R600a","ACDC","Silver","Top-Freezer"]}},
 // ═══ KIR MASHINASI ═══
-{id:40,cat:"washer",sub:"front",brand:"lg",usd:317,r:4.5,rv:61,s:true,tr:false,nw:false,img:IM.wm1,
+{id:40,cat:"washer",sub:"front",brand:"lg",usd:317,r:4.5,rv:61,s:true,tr:false,nw:false,img:PIMG.lg_f2j3ws1w||ph("LG F2J3WS1W 6.5kg White Front Load"),
 nm:{uz:"LG F2J3WS1W — 6.5kg Oq Front Load",ru:"LG F2J3WS1W — 6.5кг Белая Front Load",en:"LG F2J3WS1W — 6.5kg White Front Load"},
 dsc:{uz:"6.5 kg, 1200 rpm. Motor Digital Inverter. A+ energiya sinfi.",ru:"6.5 кг, 1200 об/мин. Motor Digital Inverter. A+ класс.",en:"6.5kg, 1200 RPM. Motor Digital Inverter Technology. A+ energy."},
 sp:{uz:["6.5 kg","1200 rpm","Digital Inverter","A+","Oq rang","Standart","6 dastur"],ru:["6.5 кг","1200 об/мин","Digital Inverter","A+","Белый","Стандарт","6 программ"],en:["6.5kg","1200 RPM","Digital Inverter","A+","White","Standard","6 programs"]}},
-{id:41,cat:"washer",sub:"front",brand:"lg",usd:360,r:4.5,rv:54,s:true,tr:true,nw:false,img:IM.wm1,
+{id:41,cat:"washer",sub:"front",brand:"lg",usd:360,r:4.5,rv:54,s:true,tr:true,nw:false,img:PIMG.lg_f2v3hs6j||ph("LG F2V3HS6J 7kg Black AI DD"),
 nm:{uz:"LG F2V3HS6J — 7kg Qora AI DD Inverter",ru:"LG F2V3HS6J — 7кг Чёрный AI DD Inverter",en:"LG F2V3HS6J — 7kg Black AI DD Inverter"},
 dsc:{uz:"7 kg, 1400 rpm. AI DD texnologiyasi matoga qarab tanlaydi. Steam+ 99.9% bakteriya.",ru:"7 кг, 1400 об/мин. AI DD выбирает программу. Steam+ 99.9% бактерий.",en:"7kg, 1400 RPM. AI DD selects by fabric type. Steam+ kills 99.9% bacteria."},
 sp:{uz:["7 kg","1400 rpm","AI DD™","Steam+","Qora rang","A+++","ThinQ™"],ru:["7 кг","1400 об/мин","AI DD™","Steam+","Чёрный","A+++","ThinQ™"],en:["7kg","1400 RPM","AI DD™","Steam+","Black","A+++","ThinQ™"]}},
-{id:42,cat:"washer",sub:"front",brand:"lg",usd:410,r:4.6,rv:46,s:true,tr:false,nw:false,img:IM.wm1,
+{id:42,cat:"washer",sub:"front",brand:"lg",usd:410,r:4.6,rv:46,s:true,tr:false,nw:false,img:PIMG.lg_f2v5hypyje||ph("LG F2V5HYPYJE 7kg AI DD ThinQ"),
 nm:{uz:"LG F2V5HYPYJE — 7kg AI DD Wi-Fi ThinQ",ru:"LG F2V5HYPYJE — 7кг AI DD Wi-Fi ThinQ",en:"LG F2V5HYPYJE — 7kg AI DD Wi-Fi ThinQ"},
 dsc:{uz:"7 kg, 1200 rpm. AI DD, ThinQ Smart Wi-Fi boshqaruv, Steam funksiyasi.",ru:"7 кг, 1200 об/мин. AI DD, ThinQ Smart Wi-Fi, Steam.",en:"7kg, 1200 RPM. AI DD technology. ThinQ Smart Wi-Fi. Steam function."},
 sp:{uz:["7 kg","1200 rpm","AI DD™","ThinQ™ Wi-Fi","Steam","Qora","A+++"],ru:["7 кг","1200 об/мин","AI DD™","ThinQ™","Steam","Чёрный","A+++"],en:["7kg","1200 RPM","AI DD™","ThinQ™ Wi-Fi","Steam","Black","A+++"]}},
-{id:43,cat:"washer",sub:"front",brand:"lg",usd:450,r:4.7,rv:38,s:true,tr:false,nw:false,img:IM.wm1,
+{id:43,cat:"washer",sub:"front",brand:"lg",usd:450,r:4.7,rv:38,s:true,tr:false,nw:false,img:PIMG.lg_f2v7gwl2p||ph("LG F2V7GWL2P 8.5kg AI DD"),
 nm:{uz:"LG F2V7GWL2P — 8.5kg AI DD Inverter",ru:"LG F2V7GWL2P — 8.5кг AI DD Inverter",en:"LG F2V7GWL2P — 8.5kg AI DD Inverter"},
 dsc:{uz:"8.5 kg, 1200 rpm. AI DD va Steam texnologiyalari. ThinQ Wi-Fi. Yirik oilalar uchun.",ru:"8.5 кг, 1200 об/мин. AI DD, Steam. ThinQ Wi-Fi.",en:"8.5kg, 1200 RPM. AI DD and Steam. ThinQ Wi-Fi. Large families."},
 sp:{uz:["8.5 kg","1200 rpm","AI DD™","Steam","ThinQ™","A+++","Motor Inverter"],ru:["8.5 кг","1200 об/мин","AI DD™","Steam","ThinQ™","A+++","Motor Inverter"],en:["8.5kg","1200 RPM","AI DD™","Steam","ThinQ™","A+++","Motor Inverter"]}},
-{id:44,cat:"washer",sub:"front",brand:"lg",usd:532,r:4.7,rv:33,s:true,tr:false,nw:false,img:IM.wm1,
+{id:44,cat:"washer",sub:"front",brand:"lg",usd:532,r:4.7,rv:33,s:true,tr:false,nw:false,img:PIMG.lg_f2t9fw9w||ph("LG F2T9FW9W 9kg AI DD"),
 nm:{uz:"LG F2T9FW9W — 9kg AI DD Inverter",ru:"LG F2T9FW9W — 9кг AI DD Inverter",en:"LG F2T9FW9W — 9kg AI DD Inverter"},
 dsc:{uz:"9 kg, 1400 rpm. AI DD, Steam+ 99.9% bakteriya. Katta yuklamalar uchun.",ru:"9 кг, 1400 об/мин. AI DD, Steam+. Для больших загрузок.",en:"9kg, 1400 RPM. AI DD, Steam+. For large loads."},
 sp:{uz:["9 kg","1400 rpm","AI DD™","Steam+","ThinQ™","A+++","Inverter Motor"],ru:["9 кг","1400 об/мин","AI DD™","Steam+","ThinQ™","A+++","Inverter Motor"],en:["9kg","1400 RPM","AI DD™","Steam+","ThinQ™","A+++","Inverter Motor"]}},
-{id:45,cat:"washer",sub:"front",brand:"lg",usd:860,r:4.8,rv:28,s:true,tr:false,nw:false,img:IM.wm2,
+{id:45,cat:"washer",sub:"front",brand:"lg",usd:860,r:4.8,rv:28,s:true,tr:false,nw:false,img:PIMG.lg_f0l9dyp2s||ph("LG F0L9DYP2S 15kg Twin Wash"),
 nm:{uz:"LG F0L9DYP2S — 15kg Twin Wash",ru:"LG F0L9DYP2S — 15кг Twin Wash",en:"LG F0L9DYP2S — 15kg Twin Wash"},
 dsc:{uz:"15 kg. Twin Wash texnologiyasi ikki dasturni bir vaqtda. Tijorat uchun.",ru:"15 кг. Twin Wash — два цикла одновременно. Коммерческое.",en:"15kg. Twin Wash runs two programs simultaneously. Commercial use."},
 sp:{uz:["15 kg","1400 rpm","Twin Wash","AI DD™","ThinQ™","A+++","Drum Motor"],ru:["15 кг","1400 об/мин","Twin Wash","AI DD™","ThinQ™","A+++","Drum Motor"],en:["15kg","1400 RPM","Twin Wash","AI DD™","ThinQ™","A+++","Drum Motor"]}},
-{id:46,cat:"washer",sub:"front",brand:"lg",usd:600,r:4.7,rv:22,s:true,tr:false,nw:true,img:IM.wm1,
+{id:46,cat:"washer",sub:"front",brand:"lg",usd:600,r:4.7,rv:22,s:true,tr:false,nw:true,img:PIMG.lg_l5c0905psgc||ph("LG L5C0905PSGC Washer Dryer Combo"),
 nm:{uz:"LG L5C0905PSGC — 9/5kg Kir Yuvish+Quritish",ru:"LG L5C0905PSGC — 9/5кг Стирка+Сушка",en:"LG L5C0905PSGC — 9/5kg Washer-Dryer Combo"},
 dsc:{uz:"9 kg yuvish, 5 kg quritish. AI DD, 1200 rpm. Steam. 475mm tor.",ru:"9 кг стирка, 5 кг сушка. AI DD, 1200 об/мин. Steam. 475мм.",en:"9kg wash, 5kg dry. AI DD. 1200 RPM. Steam. 475mm narrow."},
 sp:{uz:["9 kg yuvish","5 kg quritish","AI DD™","1200 rpm","Steam","475mm Tor","A+++"],ru:["9 кг стирка","5 кг сушка","AI DD™","1200 об/мин","Steam","475 мм","A+++"],en:["9kg wash","5kg dry","AI DD™","1200 RPM","Steam","475mm narrow","A+++"]}},
-{id:47,cat:"washer",sub:"front",brand:"beston",usd:345,r:4.3,rv:41,s:true,tr:false,nw:false,img:IM.wm1,
+{id:47,cat:"washer",sub:"front",brand:"beston",usd:345,r:4.3,rv:41,s:true,tr:false,nw:false,img:PIMG.bst_bwm6612d12||ph("Beston BWM-6612D12 12kg Front Load"),
 nm:{uz:"Beston BWM-6612D12 — 12kg Front Load",ru:"Beston BWM-6612D12 — 12кг Front Load",en:"Beston BWM-6612D12 — 12kg Front Load"},
 dsc:{uz:"12 kg, 1200 rpm. Inverter motor, Auto Clean. Tejamkor va ishonchli.",ru:"12 кг, 1200 об/мин. Inverter, Auto Clean. Экономичный.",en:"12kg, 1200 RPM. Inverter motor, Auto Clean. Economical."},
 sp:{uz:["12 kg","1200 rpm","Inverter Motor","Auto Clean","Display","A+","Tejamkor"],ru:["12 кг","1200 об/мин","Inverter","Auto Clean","Дисплей","A+","Экономичный"],en:["12kg","1200 RPM","Inverter Motor","Auto Clean","Display","A+","Economical"]}},
-{id:48,cat:"washer",sub:"front",brand:"beston",usd:437,r:4.5,rv:29,s:true,tr:false,nw:true,img:IM.wm1,
+{id:48,cat:"washer",sub:"front",brand:"beston",usd:437,r:4.5,rv:29,s:true,tr:false,nw:true,img:PIMG.bst_bwm6010d14||ph("Beston BWM-6010D14 10kg Front Load"),
 nm:{uz:"Beston BWM-6010D14 — 10kg Front Load Inverter",ru:"Beston BWM-6010D14 — 10кг Front Load Inverter",en:"Beston BWM-6010D14 — 10kg Front Load Inverter"},
 dsc:{uz:"10 kg, 1400 rpm Inverter. Display panel. A+ energiya. 14 dastur.",ru:"10 кг, 1400 об/мин Inverter. Дисплей. A+. 14 программ.",en:"10kg, 1400 RPM Inverter. Display. A+ energy. 14 programs."},
 sp:{uz:["10 kg","1400 rpm","Inverter Motor","Display","Auto Clean","A+","14 dastur"],ru:["10 кг","1400 об/мин","Inverter","Display","Auto Clean","A+","14 программ"],en:["10kg","1400 RPM","Inverter Motor","Display","Auto Clean","A+","14 programs"]}},
-{id:49,cat:"washer",sub:"top",brand:"bench",usd:270,r:4.2,rv:48,s:true,tr:false,nw:false,img:IM.wm3,
+{id:49,cat:"washer",sub:"top",brand:"bench",usd:270,r:4.2,rv:48,s:true,tr:false,nw:false,img:PIMG.ben_bwb7005g||ph("Bench BW-B7005G 7kg Top Load"),
 nm:{uz:"Bench BW-B7005G — 7kg Top Load Inverter",ru:"Bench BW-B7005G — 7кг Вертикальная Inverter",en:"Bench BW-B7005G — 7kg Top Load Inverter"},
 dsc:{uz:"7 kg yuqoridan yuklanadigan. Inverter motor. 5 yil motor kafolati.",ru:"7 кг вертикальная. Inverter мотор. 5 лет гарантия двигателя.",en:"7kg top-loading. Inverter motor. 5-year motor warranty."},
 sp:{uz:["7 kg","Top Load","Inverter Motor","5 Yil Motor Kafolat","Display","A+","Qulay"],ru:["7 кг","Вертикальная","Inverter","5 лет двигатель","Дисплей","A+","Удобная"],en:["7kg","Top Load","Inverter Motor","5yr Motor Warranty","Display","A+","Convenient"]}},
-{id:50,cat:"washer",sub:"top",brand:"bench",usd:310,r:4.3,rv:37,s:true,tr:false,nw:false,img:IM.wm3,
+{id:50,cat:"washer",sub:"top",brand:"bench",usd:310,r:4.3,rv:37,s:true,tr:false,nw:false,img:PIMG.ben_bwb1005g||ph("Bench BW-B1005G 10kg Top Load"),
 nm:{uz:"Bench BW-B1005G — 10kg Top Load Inverter",ru:"Bench BW-B1005G — 10кг Вертикальная Inverter",en:"Bench BW-B1005G — 10kg Top Load Inverter"},
 dsc:{uz:"10 kg katta hajm. Inverter motor. 5 yil motor kafolati.",ru:"10 кг. Inverter мотор. 5 лет гарантия.",en:"10kg large capacity. Inverter motor. 5yr motor warranty."},
 sp:{uz:["10 kg","Top Load","Inverter Motor","5 Yil kafolat","Display","A+","Katta hajm"],ru:["10 кг","Вертикальная","Inverter","5 лет","Дисплей","A+","Большой"],en:["10kg","Top Load","Inverter Motor","5yr Warranty","Display","A+","Large"]}},
-{id:51,cat:"washer",sub:"top",brand:"bench",usd:520,r:4.5,rv:24,s:true,tr:false,nw:true,img:IM.wm3,
+{id:51,cat:"washer",sub:"top",brand:"bench",usd:520,r:4.5,rv:24,s:true,tr:false,nw:true,img:PIMG.ben_bwb1855g||ph("Bench BW-B1855G 18kg Commercial Top Load"),
 nm:{uz:"Bench BW-B1855G — 18kg Top Load Tijorat",ru:"Bench BW-B1855G — 18кг Top Load Коммерческий",en:"Bench BW-B1855G — 18kg Top Load Commercial"},
 dsc:{uz:"18 kg tijorat uchun. Inverter Motor. 5 yil kafolat. Mehmonxona uchun.",ru:"18 кг коммерческий. Inverter. 5 лет. Для отелей.",en:"18kg commercial. Inverter Motor. 5yr warranty. For hotels."},
 sp:{uz:["18 kg","Top Load","Inverter Motor","5 Yil kafolat","Tijorat","Display","A"],ru:["18 кг","Вертикальная","Inverter","5 лет","Коммерческий","Дисплей","A"],en:["18kg","Top Load","Inverter Motor","5yr Warranty","Commercial","Display","A"]}},
-{id:52,cat:"washer",sub:"top",brand:"samsung",usd:690,r:4.6,rv:41,s:true,tr:false,nw:false,img:IM.wm3,
+{id:52,cat:"washer",sub:"top",brand:"samsung",usd:690,r:4.6,rv:41,s:true,tr:false,nw:false,img:PIMG.sam_wa80f18b9bgm||ph("Samsung WA80F18B9BGM 18kg Top Load"),
 nm:{uz:"Samsung WA80F18B9BGM — 18kg Top Load",ru:"Samsung WA80F18B9BGM — 18кг Top Load",en:"Samsung WA80F18B9BGM — 18kg Top Load"},
 dsc:{uz:"18 kg Samsung top load. Digital Inverter. Smart Motion. 10 yil motor kafolati.",ru:"18 кг Samsung. Digital Inverter. Smart Motion. 10 лет мотор.",en:"18kg Samsung top load. Digital Inverter. Smart Motion. 10yr motor warranty."},
 sp:{uz:["18 kg","Top Load","Digital Inverter","Smart Motion","10 Yil Motor","Display","A+"],ru:["18 кг","Вертикальная","Digital Inverter","Smart Motion","10 лет мотор","Дисплей","A+"],en:["18kg","Top Load","Digital Inverter","Smart Motion","10yr Motor","Display","A+"]}},
 // ═══ VSTROYENNIY TEXNIKA ═══
 
-{id:53,cat:"builtin",sub:"range",brand:"ferre",usd:220,r:4.1,rv:67,s:true,tr:false,nw:false,img:IM.bi1,
+{id:53,cat:"builtin",sub:"range",brand:"ferre",usd:220,r:4.1,rv:67,s:true,tr:false,nw:false,img:PIMG.fer_nl901t||ph("Ferre NL90-1T Gas Range 90cm"),
 nm:{uz:"Ferre NL90-1T Oddiy — Gaz Plita 90sm",ru:"Ferre NL90-1T Простая — Газовая Плита 90см",en:"Ferre NL90-1T Simple — Gas Range 90cm"},
 dsc:{uz:"Oddiy 90sm gaz plita. 5 goreli, cast iron panjara, elektr yoqish. Turkiyada ishlab chiqarilgan.",ru:"Простая 90см газовая плита. 5 горелок, чугун, электроподжиг. Турция.",en:"Simple 90cm gas range. 5 burners, cast iron, electric ignition. Turkey."},
 sp:{uz:["5 goreli","Cast Iron","Elektr yoqish","90 sm","FFD","Mexanik","Turkiya"],ru:["5 горелок","Чугун","Электроподжиг","90 см","FFD","Механика","Турция"],en:["5 Burners","Cast Iron","Auto Ignition","90 cm","FFD","Mechanical","Turkey"]}},
-{id:54,cat:"builtin",sub:"range",brand:"ferre",usd:285,r:4.3,rv:56,s:true,tr:false,nw:false,img:IM.bi1,
+{id:54,cat:"builtin",sub:"range",brand:"ferre",usd:285,r:4.3,rv:56,s:true,tr:false,nw:false,img:PIMG.fer_nl901full||ph("Ferre NL90-1 Full Gas Electric Oven 90cm"),
 nm:{uz:"Ferre NL90-1 Full — 90sm Gaz+Elektr Duxovka",ru:"Ferre NL90-1 Full — 90см Газ+Электрическая духовка",en:"Ferre NL90-1 Full — 90cm Gas+Electric Oven"},
 dsc:{uz:"90sm kombinatsiyali. 5 gaz goreli, elektr duxovka, grill, timer, cast iron, FFD.",ru:"90см комбинированная. 5 горелок, эл. духовка, гриль, таймер, чугун.",en:"90cm combination. 5 gas burners, electric oven, grill, timer, cast iron."},
 sp:{uz:["5 Gaz goreli","Elektr Duxovka","Grill","Timer","FFD","Cast Iron","Turkiya"],ru:["5 газ горелок","Эл. духовка","Гриль","Таймер","FFD","Чугун","Турция"],en:["5 Gas Burners","Electric Oven","Grill","Timer","FFD","Cast Iron","Turkey"]}},
-{id:55,cat:"builtin",sub:"range",brand:"ferre",usd:370,r:4.4,rv:38,s:true,tr:false,nw:false,img:IM.bi1,
+{id:55,cat:"builtin",sub:"range",brand:"ferre",usd:370,r:4.4,rv:38,s:true,tr:false,nw:false,img:PIMG.fer_fullconv||ph("Ferre Full Convection Gas Range 90cm"),
 nm:{uz:"Ferre Full Konveksiya — 90sm Gaz+Konveksiya",ru:"Ferre Full Конвекция — 90см Газ+Конвекция",en:"Ferre Full Convection — 90cm Gas+Convection"},
 dsc:{uz:"90sm premium. 5 goreli, konveksiyali elektr duxovka, timer, grill, FFD.",ru:"90см премиум. 5 горелок, конвекция, эл. духовка, таймер, гриль.",en:"90cm premium. 5 burners, convection electric oven, timer, grill, FFD."},
 sp:{uz:["5 Gaz goreli","Konveksiya","Elektr Duxovka","Timer","Grill","FFD","Turkiya"],ru:["5 горелок","Конвекция","Эл. духовка","Таймер","Гриль","FFD","Турция"],en:["5 Gas Burners","Convection","Electric Oven","Timer","Grill","FFD","Turkey"]}},
-{id:56,cat:"builtin",sub:"range",brand:"hisense",usd:470,r:4.5,rv:34,s:true,tr:true,nw:false,img:IM.bi1,
+{id:56,cat:"builtin",sub:"range",brand:"hisense",usd:470,r:4.5,rv:34,s:true,tr:true,nw:false,img:PIMG.his_hfs90ga5ebl||ph("Hisense HFS90GA5EBL Black Gas Range"),
 nm:{uz:"Hisense HFS90GA5EBL — 90sm Qora Gaz Plita",ru:"Hisense HFS90GA5EBL — 90см Чёрная Газовая Плита",en:"Hisense HFS90GA5EBL — 90cm Black Gas Range"},
 dsc:{uz:"90sm 5 goreli qora gaz plita. Cast iron. Gaz nazorat. Elektr yoqish.",ru:"90см газовая плита, чёрная. Чугун. Газ-контроль. Электроподжиг.",en:"90cm 5-burner gas range, black. Cast iron. Gas control. Auto ignition."},
 sp:{uz:["5 goreli","Cast Iron","Gaz nazorat","Elektr yoqish","90 sm","Qora","Gaz Duxovka"],ru:["5 горелок","Чугун","Газ-контроль","Электроподжиг","90 см","Чёрный","Газ духовка"],en:["5 Burners","Cast Iron","Gas Control","Auto Ignition","90 cm","Black","Gas Oven"]}},
-{id:57,cat:"builtin",sub:"range",brand:"hisense",usd:260,r:4.2,rv:52,s:true,tr:false,nw:false,img:IM.bi1,
+{id:57,cat:"builtin",sub:"range",brand:"hisense",usd:260,r:4.2,rv:52,s:true,tr:false,nw:false,img:PIMG.his_hfg60121x||ph("Hisense HFG60121X Gas Range 60cm"),
 nm:{uz:"Hisense HFG60121X — 60sm Gaz Plita",ru:"Hisense HFG60121X — 60см Газовая Плита",en:"Hisense HFG60121X — 60cm Gas Range"},
 dsc:{uz:"60sm 4 goreli gaz plita. Cast iron. Elektr yoqish. Gaz nazorat.",ru:"60см 4 горелки. Чугун. Электроподжиг. Газ-контроль.",en:"60cm 4-burner gas range. Cast iron. Auto ignition. Gas control."},
 sp:{uz:["4 goreli","Cast Iron","Gaz nazorat","Elektr yoqish","60 sm","Kumush","Gaz Duxovka"],ru:["4 горелки","Чугун","Газ-контроль","Электроподжиг","60 см","Серебристый","Газ духовка"],en:["4 Burners","Cast Iron","Gas Control","Auto Ignition","60 cm","Silver","Gas Oven"]}},
-{id:58,cat:"builtin",sub:"range",brand:"immer",usd:468,r:4.5,rv:29,s:true,tr:false,nw:false,img:IM.bi1,
+{id:58,cat:"builtin",sub:"range",brand:"immer",usd:468,r:4.5,rv:29,s:true,tr:false,nw:false,img:PIMG.imm_x90||ph("Immer X90 White Gas Electric Range"),
 nm:{uz:"Immer X90 — 90sm Oq Gaz+Elektr Premium",ru:"Immer X90 — 90см Белый Газ+Электр Премиум",en:"Immer X90 — 90cm White Gas+Electric Premium"},
 dsc:{uz:"Premium 90sm. Low-e Glass, Gas Regulator, Cast Iron, 5 goreli, Electric Grill, FFD.",ru:"Премиум 90см. Low-e Glass, Gas Regulator, Чугун, 5 горелок, Electric Grill.",en:"Premium 90cm. Low-e Glass, Gas Regulator, Cast Iron, 5 burners, Electric Grill."},
 sp:{uz:["5 goreli","Low-e Glass","Gas Regulator","Cast Iron","Electric Grill","FFD","Oq rang"],ru:["5 горелок","Low-e Glass","Gas Regulator","Чугун","Electric Grill","FFD","Белый"],en:["5 Burners","Low-e Glass","Gas Regulator","Cast Iron","Electric Grill","FFD","White"]}},
-{id:59,cat:"builtin",sub:"range",brand:"immer",usd:455,r:4.4,rv:26,s:true,tr:false,nw:false,img:IM.bi1,
+{id:59,cat:"builtin",sub:"range",brand:"immer",usd:455,r:4.4,rv:26,s:true,tr:false,nw:false,img:PIMG.imm_b90||ph("Immer B90 Black Gas Electric Range"),
 nm:{uz:"Immer B90 — 90sm Qora Gaz+Elektr",ru:"Immer B90 — 90см Чёрный Газ+Электр",en:"Immer B90 — 90cm Black Gas+Electric"},
 dsc:{uz:"Qora 90sm. Low-e Glass, Gas Regulator, Cast Iron, 5 goreli, Electric Grill, FFD.",ru:"Чёрная 90см. Low-e Glass, Gas Regulator, Чугун, 5 горелок, Electric Grill.",en:"Black 90cm. Low-e Glass, Gas Regulator, Cast Iron, 5 burners, Electric Grill."},
 sp:{uz:["5 goreli","Low-e Glass","Gas Regulator","Cast Iron","Electric Grill","Qora","FFD"],ru:["5 горелок","Low-e Glass","Gas Regulator","Чугун","Electric Grill","Чёрный","FFD"],en:["5 Burners","Low-e Glass","Gas Regulator","Cast Iron","Electric Grill","Black","FFD"]}},
-{id:60,cat:"builtin",sub:"hob",brand:"beston",usd:145,r:4.3,rv:78,s:true,tr:true,nw:false,img:IM.bi2,
+{id:60,cat:"builtin",sub:"hob",brand:"beston",usd:145,r:4.3,rv:78,s:true,tr:true,nw:false,img:PIMG.bst_bhs11090bt||ph("Beston BHS-11090BT Gas Hob 90cm"),
 nm:{uz:"Beston BHS-11090BT — 5 Goreli 90sm Qo'shma Pech",ru:"Beston BHS-11090BT — 5 горелок 90см Поверхность",en:"Beston BHS-11090BT — 5-Burner 90cm Gas Hob"},
 dsc:{uz:"90sm 5 goreli. Bardoshli oyna 8mm. Elektr yoqish. Wok stand. Qora rang.",ru:"90см 5 горелок. Стекло 8мм. Электроподжиг. Wok stand. Чёрный.",en:"90cm 5-burner. 8mm tempered glass. Auto ignition. Wok stand. Black."},
 sp:{uz:["5 goreli","8mm Bardoshli Oyna","Elektr yoqish","860×520mm","Wok stand","Qora","A"],ru:["5 горелок","Стекло 8мм","Электроподжиг","860×520мм","Wok stand","Чёрный","A"],en:["5 Burners","8mm Glass","Auto Ignition","860×520mm","Wok stand","Black","A"]}},
-{id:61,cat:"builtin",sub:"hob",brand:"beston",usd:119,r:4.2,rv:64,s:true,tr:false,nw:false,img:IM.bi2,
+{id:61,cat:"builtin",sub:"hob",brand:"beston",usd:119,r:4.2,rv:64,s:true,tr:false,nw:false,img:PIMG.bst_bhs11060bt||ph("Beston BHS-11060BT Gas Hob 60cm"),
 nm:{uz:"Beston BHS-11060BT — 4 Goreli 60sm Qo'shma Pech",ru:"Beston BHS-11060BT — 4 горелки 60см Поверхность",en:"Beston BHS-11060BT — 4-Burner 60cm Gas Hob"},
 dsc:{uz:"60sm 4 goreli. Bardoshli oyna 8mm. Elektr yoqish. Wok stand. Qora.",ru:"60см 4 горелки. Стекло 8мм. Электроподжиг. Wok stand.",en:"60cm 4-burner. 8mm tempered glass. Auto ignition. Wok stand."},
 sp:{uz:["4 goreli","8mm Bardoshli Oyna","Elektr yoqish","600×520mm","Wok stand","Qora","A"],ru:["4 горелки","Стекло 8мм","Электроподжиг","600×520мм","Wok stand","Чёрный","A"],en:["4 Burners","8mm Glass","Auto Ignition","600×520mm","Wok stand","Black","A"]}},
-{id:62,cat:"builtin",sub:"hob",brand:"beston",usd:95,r:4.2,rv:44,s:true,tr:false,nw:false,img:IM.bi2,
+{id:62,cat:"builtin",sub:"hob",brand:"beston",usd:95,r:4.2,rv:44,s:true,tr:false,nw:false,img:PIMG.bst_bhc10660bt||ph("Beston BHC-10660BT Wok Burner Hob"),
 nm:{uz:"Beston BHC-10660BT — 4+1 Wok Goreli O'rnatiluvchi",ru:"Beston BHC-10660BT — 4+1 Wok горелки Встраиваемая",en:"Beston BHC-10660BT — 4+1 Wok Burner Built-in"},
 dsc:{uz:"O'rnatiluvchi 4+1 Wok goreli. Panel 8mm. 60×50sm. Elektr yoqish. FFD. Yangi model.",ru:"Встраиваемая 4+1 Wok. Стекло 8мм. 60×50см. Электроподжиг. FFD.",en:"Built-in 4+1 Wok burner. 8mm glass. 60×50cm. Auto ignition. FFD. New model."},
 sp:{uz:["4+1 Wok goreli","8mm Panel","60×50sm","Elektr yoqish","FFD","O'rnatiluvchi","Yangi"],ru:["4+1 Wok","Стекло 8мм","60×50см","Электроподжиг","FFD","Встраиваемая","Новинка"],en:["4+1 Wok","8mm Glass","60×50cm","Auto Ignition","FFD","Built-in","New Model"]}},
-{id:63,cat:"builtin",sub:"hood",brand:"beston",usd:125,r:4.4,rv:62,s:true,tr:true,nw:false,img:IM.bi3,
+{id:63,cat:"builtin",sub:"hood",brand:"beston",usd:125,r:4.4,rv:62,s:true,tr:true,nw:false,img:PIMG.bst_brh60b1380||ph("Beston BRH-60B13801 Hood Sensor Voice"),
 nm:{uz:"Beston BRH-60B13801 — 60sm 1380m³ Sensor+Voice",ru:"Beston BRH-60B13801 — 60см 1380м³ Sensor+Voice",en:"Beston BRH-60B13801 — 60cm 1380m³ Sensor+Voice"},
 dsc:{uz:"60sm qora vityajka. Sensor, Gesture va Voice control. 1380 m³/soat. LED 1×3W. Karbon+Baffle filtr.",ru:"60см. Sensor, Gesture, Voice. 1380 м³/ч. LED 1×3W. Карбон+Baffle.",en:"60cm black hood. Sensor, Gesture & Voice control. 1380 m³/h. LED. Carbon+Baffle."},
 sp:{uz:["60 sm","1380 m³/soat","Sensor+Gesture+Voice","LED 1×3W","Karbon+Baffle","2 ta mo'ri","Qora"],ru:["60 см","1380 м³/ч","Sensor+Gesture+Voice","LED 1×3W","Карбон+Baffle","2 трубы","Чёрный"],en:["60 cm","1380 m³/h","Sensor+Gesture+Voice","LED 1×3W","Carbon+Baffle","2 ducts","Black"]}},
-{id:64,cat:"builtin",sub:"hood",brand:"beston",usd:140,r:4.5,rv:44,s:true,tr:false,nw:false,img:IM.bi3,
+{id:64,cat:"builtin",sub:"hood",brand:"beston",usd:140,r:4.5,rv:44,s:true,tr:false,nw:false,img:PIMG.bst_brh60bct1kbs||ph("Beston BRH-60BCT1KBS Hood 60cm"),
 nm:{uz:"Beston BRH-60BCT1KBS — 60sm 1000m³ Sensor",ru:"Beston BRH-60BCT1KBS — 60см 1000м³ Sensor",en:"Beston BRH-60BCT1KBS — 60cm 1000m³ Sensor"},
 dsc:{uz:"60sm. Sensor va Gesture control. 1000 m³/soat. LED 1×5W. Misli Motor. Inox.",ru:"60см. Sensor, Gesture. 1000 м³/ч. LED 1×5W. Мотор Inox.",en:"60cm. Sensor & Gesture. 1000 m³/h. LED 1×5W. Inox motor."},
 sp:{uz:["60 sm","1000 m³/soat","Sensor+Gesture","LED 1×5W","Misli Motor","Inox","2 ta mo'ri"],ru:["60 см","1000 м³/ч","Sensor+Gesture","LED 1×5W","Мотор Inox","Inox","2 трубы"],en:["60 cm","1000 m³/h","Sensor+Gesture","LED 1×5W","Inox Motor","Inox","2 ducts"]}},
-{id:65,cat:"builtin",sub:"hood",brand:"beston",usd:155,r:4.6,rv:38,s:true,tr:false,nw:false,img:IM.bi3,
+{id:65,cat:"builtin",sub:"hood",brand:"beston",usd:155,r:4.6,rv:38,s:true,tr:false,nw:false,img:PIMG.bst_brh90bct1kbs||ph("Beston BRH-90BCT1KBS Hood 90cm"),
 nm:{uz:"Beston BRH-90BCT1KBS — 90sm 1000m³ Sensor",ru:"Beston BRH-90BCT1KBS — 90см 1000м³ Sensor",en:"Beston BRH-90BCT1KBS — 90cm 1000m³ Sensor"},
 dsc:{uz:"90sm keng vityajka. Sensor. 1000 m³/soat. LED 1×5W. Misli motor. 2 ta mo'ri.",ru:"90см широкая. Sensor. 1000 м³/ч. LED 1×5W. Мотор Inox.",en:"90cm wide. Sensor. 1000 m³/h. LED 1×5W. Inox motor. 2 ducts."},
 sp:{uz:["90 sm","1000 m³/soat","Sensor","LED 1×5W","Misli Motor","2 ta mo'ri","Inox+Oyna"],ru:["90 см","1000 м³/ч","Sensor","LED 1×5W","Мотор Inox","2 трубы","Inox+Стекло"],en:["90 cm","1000 m³/h","Sensor","LED 1×5W","Inox Motor","2 ducts","Inox+Glass"]}},
-{id:66,cat:"builtin",sub:"hood",brand:"beston",usd:130,r:4.3,rv:55,s:true,tr:false,nw:false,img:IM.bi3,
+{id:66,cat:"builtin",sub:"hood",brand:"beston",usd:130,r:4.3,rv:55,s:true,tr:false,nw:false,img:PIMG.bst_brh60stks||ph("Beston BRH-60BSTKS800SS Slimline Hood"),
 nm:{uz:"Beston BRH-60BSTKS800SS — 60sm 800m³ Inox Slimline",ru:"Beston BRH-60BSTKS800SS — 60см 800м³ Inox Slimline",en:"Beston BRH-60BSTKS800SS — 60cm 800m³ Inox Slimline"},
 dsc:{uz:"60sm Inox slimline vityajka. Sensor. 800 m³/soat. LED 1×3W. Misli motor.",ru:"60см Inox Slimline. Sensor. 800 м³/ч. LED 1×3W. Мотор Inox.",en:"60cm Inox slimline. Sensor. 800 m³/h. LED 1×3W. Inox motor."},
 sp:{uz:["60 sm","800 m³/soat","Sensor","LED 1×3W","Misli Motor","Inox","Slimline"],ru:["60 см","800 м³/ч","Sensor","LED 1×3W","Мотор Inox","Inox","Slimline"],en:["60 cm","800 m³/h","Sensor","LED 1×3W","Inox Motor","Inox","Slimline"]}},
-{id:67,cat:"builtin",sub:"hood",brand:"beston",usd:97,r:4.2,rv:43,s:true,tr:false,nw:false,img:IM.bi3,
+{id:67,cat:"builtin",sub:"hood",brand:"beston",usd:97,r:4.2,rv:43,s:true,tr:false,nw:false,img:PIMG.bst_bhr60w1055b||ph("Beston BHR-60W1055B Black Slim Hood"),
 nm:{uz:"Beston BHR-60W1055B — 60sm Qora Slim Vityajka",ru:"Beston BHR-60W1055B — 60см Чёрная Slim Вытяжка",en:"Beston BHR-60W1055B — 60cm Black Slim Hood"},
 dsc:{uz:"60sm arzon qora slim vityajka. 3 ta tezlik. LED yoritish. Oddiy va ishonchli.",ru:"60см доступная чёрная slim. 3 скорости. LED подсветка.",en:"60cm affordable black slim hood. 3 speed settings. LED lighting."},
 sp:{uz:["60 sm","3 ta tezlik","LED yoritish","Qora rang","Karbon filtr","Slim","Arzon"],ru:["60 см","3 скорости","LED","Чёрный","Карбон фильтр","Slim","Доступная"],en:["60 cm","3 speed","LED lighting","Black","Carbon filter","Slim","Affordable"]}},
@@ -805,7 +886,7 @@ function PModal({p,lang,t,C,dark,onClose,notify}){
                   </div>
                 ))}
               </div>
-              <motion.a href="tel:+998901234567" whileHover={{scale:1.02}} whileTap={{scale:.97}}
+              <motion.a href="tel:+998996501684" whileHover={{scale:1.02}} whileTap={{scale:.97}}
                 style={{display:"flex",alignItems:"center",justifyContent:"center",gap:8,padding:"11px",borderRadius:10,background:C.txt,color:C.inv,fontWeight:700,fontSize:13,cursor:"pointer",textDecoration:"none",fontFamily:"Unbounded",marginTop:"auto"}}>
                 📞 {t.contact}
               </motion.a>
@@ -1087,8 +1168,8 @@ export default function App(){
               </div>
             </div>
             <div>
-              <h4 className="UB" style={{fontSize:11,fontWeight:800,marginBottom:14,textTransform:"uppercase",letterSpacing:.5}}>{t.contact}</h4>
-              {[{ic:"📞",lb:t.phone,tx:"+998 90 123 45 67"},{ic:"✈️",lb:"Telegram",tx:"@akaukauz"},{ic:"📧",lb:"Email",tx:"info@akaukauz.uz"}].map(({ic,lb,tx})=>(
+              <h4 className="UB" style={{fontSize:11,fontWeight:800,marginBottom:14,textTransform:"uppercase",letterSpaEmailcing:.5}}>{t.contact}</h4>
+              {[{ic:"📞",lb:t.phone,tx:"+998 99 650 16 84 - +998 98 363 16 84"},{ic:"✈️",lb:"Telegram",tx:"@technoodomm"},].map(({ic,lb,tx})=>(
                 <div key={tx} style={{display:"flex",alignItems:"center",gap:9,padding:"8px 0",borderBottom:`1px solid ${C.bord}`}}>
                   <span style={{fontSize:14,flexShrink:0}}>{ic}</span>
                   <div><div style={{fontSize:9,color:C.sub}}>{lb}</div><div style={{fontSize:11,fontWeight:600}}>{tx}</div></div>
@@ -1121,11 +1202,11 @@ export default function App(){
               <motion.div initial={{opacity:0,scale:.9,y:10}} animate={{opacity:1,scale:1,y:0}} exit={{opacity:0,scale:.9,y:10}}
                 style={{background:C.card,border:`1px solid ${C.bord}`,borderRadius:14,padding:18,minWidth:230,boxShadow:`0 18px 50px rgba(0,0,0,${dark?.38:.14})`,transformOrigin:"bottom right"}}>
                 <p className="UB" style={{fontWeight:800,fontSize:12,marginBottom:12}}>{t.contact}</p>
-                <a href="tel:+998901234567"
+                <a href="tel:+998 99 650 16 84"
                   style={{display:"flex",alignItems:"center",gap:9,padding:"9px 12px",borderRadius:8,border:`1px solid ${C.bord}`,textDecoration:"none",color:C.txt,marginBottom:7,transition:"all .2s",fontSize:12}}
                   onMouseOver={e=>{e.currentTarget.style.background=C.txt;e.currentTarget.style.color=C.inv;}}
                   onMouseOut={e=>{e.currentTarget.style.background="transparent";e.currentTarget.style.color=C.txt;}}>
-                  <span>📞</span><div><div style={{fontSize:9,color:"inherit",opacity:.6}}>{t.phone}</div><div style={{fontWeight:700}}>+998 90 123 45 67</div></div>
+                  <span>📞</span><div><div style={{fontSize:9,color:"inherit",opacity:.6}}>{t.phone}</div><div style={{fontWeight:700}}>+998 99 650 16 84 </div></div>
                 </a>
                 <div style={{padding:"8px 12px",borderRadius:8,background:dark?"rgba(255,255,255,.04)":"rgba(0,0,0,.04)",fontSize:11,color:C.sub}}>
                   🕐 {t.workHours}
