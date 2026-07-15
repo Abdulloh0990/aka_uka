@@ -24,23 +24,33 @@ const TR={
     conditioner:"Konditsioner",fridge:"Xolodilnik",washer:"Kir Mashinasi",builtin:"Vstoyenniy Texnika",
     filter:"Filtr",brands:"Brendlar",usdPrice:"Narx (USD)",rating:"Reyting",inStock:"Mavjud",outStock:"Tugagan",
     apply:"Qo'llash",reset:"Tozalash",contact:"Aloqa",phone:"Telefon",guarantee:"Kafolat",
-    delivery:"Bepul Yetkazish",install:"Bo'lib to'lash",reviews:"sharh",specs:"Xususiyatlar",months:"oy",
+    delivery:"Yetqazib berish",install:"Bo'lib to'lash",reviews:"sharh",specs:"Xususiyatlar",months:"oy",
     isNew:"Yangi",hot:"Trend",prods:"mahsulot",desc:"Tavsif",noRes:"Mahsulot topilmadi",
     filterApplied:"Filtr qo'llandi",filterCleared:"Filtr tozalandi",sort:"Saralash",sortDef:"Standart",
     sortPriceAsc:"Narx ↑",sortPriceDesc:"Narx ↓",sortRating:"Reyting",allBrands:"Barcha Brendlar",
+    details:"Batafsil",catalog:"Katalog",contactUs:"Aloqa",activeFilters:"Aktiv filtrlar",
+    whyChoose:"Nega biz?",whyChooseDesc:"Rasmiy mahsulotlar, kafolat va tezkor yetkazib berish — barchasi bir joyda.",
+    benefit1Title:"Rasmiy mahsulotlar",benefit1Text:"Brendlar va original variantlar bilan ishonchli tanlov.",
+    benefit2Title:"Kafolat va qo'llab-quvvatlash",benefit2Text:"Har bir mahsulot uchun kafolat va texnik yordam.",
+    benefit3Title:"Tezkor yetkazib berish",benefit3Text:"O'zbekiston bo'ylab tezkor yetkazib berish va to'lov qulayligi.",
     workHours:"09:00-19:00",payNote:"To'lov Markaziy Bank kursi bo'yicha so'mda",wall:"Devordagi",
     floor:"Kolonnik",copy:"Nusxalandi!",currency:"So'mda to'lov",founded:"Tashkil etilgan: 2019",
-    address:"Toshkent, O'zbekiston",hours:"Ish vaqti",subFront:"Old yuklanadigan",subTop:"Yuqoridan",
+    address:"Toshkent, Malika bozori a22-a23",hours:"Ish vaqti",subFront:"Old yuklanadigan",subTop:"Yuqoridan",
     subRange:"Plita",subHob:"Qo'shma pech",subHood:"Vityajka",subSide:"Yon tomondan",
     subTop2:"Ustdan muzlatgichli",subBot:"Pastdan muzlatgichli",subBuiltFr:"O'rnatiluvchi"},
   ru:{brand:"Ака-Ука Бытовая Техника",tag:"Качество и Доверие",search:"Поиск товаров...",allCat:"Все",
     conditioner:"Кондиционер",fridge:"Холодильник",washer:"Стир. машина",builtin:"Встраиваемая техника",
     filter:"Фильтр",brands:"Бренды",usdPrice:"Цена (USD)",rating:"Рейтинг",inStock:"В наличии",outStock:"Нет",
     apply:"Применить",reset:"Сбросить",contact:"Контакты",phone:"Телефон",guarantee:"Гарантия",
-    delivery:"Бесплатная доставка",install:"Рассрочка",reviews:"отзывов",specs:"Характеристики",months:"мес",
+    delivery:"Доставка",install:"Рассрочка",reviews:"отзывов",specs:"Характеристики",months:"мес",
     isNew:"Новинка",hot:"Хит",prods:"товаров",desc:"Описание",noRes:"Товары не найдены",
     filterApplied:"Фильтр применён",filterCleared:"Фильтр сброшен",sort:"Сортировка",sortDef:"По умолчанию",
     sortPriceAsc:"Цена ↑",sortPriceDesc:"Цена ↓",sortRating:"По рейтингу",allBrands:"Все бренды",
+    details:"Подробнее",catalog:"Каталог",contactUs:"Контакты",activeFilters:"Активные фильтры",
+    whyChoose:"Почему мы?",whyChooseDesc:"Официальные товары, гарантия и быстрая доставка — всё в одном месте.",
+    benefit1Title:"Официальные товары",benefit1Text:"Надёжный выбор из проверенных брендов и оригинальных моделей.",
+    benefit2Title:"Гарантия и поддержка",benefit2Text:"Гарантия на каждую позицию и квалифицированная помощь.",
+    benefit3Title:"Быстрая доставка",benefit3Text:"Быстрая доставка по Узбекистану и удобные способы оплаты.",
     workHours:"09:00-19:00",payNote:"Оплата по курсу ЦБ в сумах",wall:"Настенный",floor:"Напольный",
     copy:"Скопировано!",currency:"Оплата в сумах",founded:"Основан: 2019",address:"Ташкент, Узбекистан",
     hours:"Время работы",subFront:"Фронтальная",subTop:"Вертикальная",subRange:"Плита",
@@ -50,10 +60,15 @@ const TR={
     conditioner:"Air Conditioner",fridge:"Refrigerator",washer:"Washing Machine",builtin:"Built-in Appliances",
     filter:"Filter",brands:"Brands",usdPrice:"Price (USD)",rating:"Rating",inStock:"In Stock",outStock:"Out of Stock",
     apply:"Apply",reset:"Reset",contact:"Contact",phone:"Phone",guarantee:"Warranty",
-    delivery:"Free Delivery",install:"Installment",reviews:"reviews",specs:"Specs",months:"mo",
+    delivery:" Delivery",install:"Installment",reviews:"reviews",specs:"Specs",months:"mo",
     isNew:"New",hot:"Hot",prods:"products",desc:"Description",noRes:"No products found",
     filterApplied:"Filter applied",filterCleared:"Filter cleared",sort:"Sort",sortDef:"Default",
     sortPriceAsc:"Price ↑",sortPriceDesc:"Price ↓",sortRating:"By Rating",allBrands:"All Brands",
+    details:"Details",catalog:"Catalog",contactUs:"Contact",activeFilters:"Active filters",
+    whyChoose:"Why choose us?",whyChooseDesc:"Official products, warranty and fast delivery — all in one place.",
+    benefit1Title:"Official products",benefit1Text:"A reliable choice of trusted brands and original models.",
+    benefit2Title:"Warranty & support",benefit2Text:"Warranty coverage on every item and expert assistance.",
+    benefit3Title:"Fast delivery",benefit3Text:"Quick delivery across Uzbekistan and flexible payment options.",
     workHours:"09:00-19:00",payNote:"Payment at CBU rate in UZS",wall:"Wall-mount",floor:"Floor-standing",
     copy:"Copied!",currency:"Pay in UZS",founded:"Founded: 2019",address:"Tashkent, Uzbekistan",
     hours:"Working hours",subFront:"Front-load",subTop:"Top-load",subRange:"Range",
@@ -757,7 +772,10 @@ function Stars({r,C}){
 function PCard({p,lang,t,C,dark,onOpen,notify}){
   const[hov,setHov]=useState(false);
   const[imgOk,setImgOk]=useState(false);
+  const[imgError,setImgError]=useState(false);
   const brand=BL.find(b=>b.id===p.brand);
+  const noImage=!p.img || p.img.trim()==="" || p.img.startsWith("blob:") || p.img.includes("placehold.co");
+  const showEmptyState=noImage || imgError;
   const subLabel=()=>{
     if(p.cat==="conditioner") return p.sub==="floor"?t.floor:t.wall;
     if(p.cat==="fridge"){
@@ -776,54 +794,68 @@ function PCard({p,lang,t,C,dark,onOpen,notify}){
     return p.sub;
   };
   return(
-    <motion.div variants={V.card} whileHover={{y:-5}}
+    <motion.div variants={V.card} whileHover={{y:-6,scale:1.01}}
       onHoverStart={()=>setHov(true)} onHoverEnd={()=>setHov(false)}
-      style={{background:C.card,borderRadius:12,overflow:"hidden",cursor:"pointer",
+      style={{background:C.card,borderRadius:18,overflow:"hidden",cursor:"pointer",
         border:`1px solid ${hov?C.txt:C.bord}`,
-        boxShadow:hov?`0 10px 34px rgba(0,0,0,${dark?.28:.09})`:"none",
-        transition:"border-color .22s,box-shadow .22s"}}
+        boxShadow:hov?`0 18px 40px rgba(0,0,0,${dark?.24:.1})`:"0 10px 24px rgba(0,0,0,.05)",
+        transition:"border-color .22s,box-shadow .22s,transform .22s ease,background .22s ease"}}
       onClick={()=>onOpen(p)}>
-      <div style={{position:"relative",aspectRatio:"4/3",overflow:"hidden",background:dark?"#0f0f0f":"#F2F2F2"}}>
-        {!imgOk&&<div style={{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center",fontSize:32,opacity:.14}}>
+      <div style={{position:"relative",aspectRatio:"4/3",overflow:"hidden",background:dark?"linear-gradient(135deg,#121212,#0a0a0a)":"linear-gradient(135deg,#f8f8f8,#f0f0f0)",borderBottom:`1px solid ${C.bord}`}}>
+        {!imgOk&&!showEmptyState&&<div style={{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center",fontSize:30,opacity:.14}}>
           {p.cat==="conditioner"?"❄️":p.cat==="fridge"?"🧊":p.cat==="washer"?"🔄":"🔧"}
         </div>}
-        <motion.img src={p.img} alt={p.nm[lang]} onLoad={()=>setImgOk(true)}
-          initial={{opacity:0}} animate={{opacity:imgOk?1:0}} transition={{duration:.35}}
-          style={{width:"100%",height:"100%",objectFit:"cover",transition:"transform .45s ease"}}
-          onMouseOver={e=>e.target.style.transform="scale(1.05)"}
-          onMouseOut={e=>e.target.style.transform="scale(1)"}/>
+        {showEmptyState?(
+          <div style={{width:"100%",height:"100%",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",gap:8,padding:16,background:dark?"rgba(255,255,255,.03)":"rgba(0,0,0,.03)",color:C.sub,textAlign:"center"}}>
+            <span style={{fontSize:28}}>🖼️</span>
+            <span style={{fontSize:11,fontWeight:700,letterSpacing:0.4}}>Rasm mavjud emas</span>
+          </div>
+        ):(
+          <motion.img src={p.img} alt={p.nm[lang]} onLoad={()=>{setImgOk(true);setImgError(false);}} onError={()=>setImgError(true)}
+            initial={{opacity:0}} animate={{opacity:imgOk?1:0}} transition={{duration:.35}}
+            style={{width:"100%",height:"100%",objectFit:"contain",objectPosition:"center",padding:18,background:dark?"rgba(255,255,255,.03)":"rgba(255,255,255,.8)",transition:"transform .45s ease"}}
+            onMouseOver={e=>e.target.style.transform="scale(1.04)"}
+            onMouseOut={e=>e.target.style.transform="scale(1)"}/>
+        )}
         <div style={{position:"absolute",top:9,left:9,display:"flex",flexDirection:"column",gap:4}}>
-          {p.nw&&<span style={{background:C.txt,color:C.inv,borderRadius:4,padding:"2px 8px",fontSize:8,fontWeight:800,letterSpacing:.6}}>NEW</span>}
-          {p.tr&&<span style={{background:C.txt,color:C.inv,borderRadius:4,padding:"2px 8px",fontSize:8,fontWeight:800,letterSpacing:.6}}>TREND</span>}
+          {p.nw&&<span style={{background:"linear-gradient(135deg,#111,#333)",color:"#fff",borderRadius:999,padding:"2px 8px",fontSize:8,fontWeight:800,letterSpacing:.6}}>NEW</span>}
+          {p.tr&&<span style={{background:"linear-gradient(135deg,#111,#333)",color:"#fff",borderRadius:999,padding:"2px 8px",fontSize:8,fontWeight:800,letterSpacing:.6}}>TREND</span>}
         </div>
-        <div style={{position:"absolute",bottom:7,right:7,background:"rgba(0,0,0,.58)",backdropFilter:"blur(4px)",color:"#fff",borderRadius:4,padding:"2px 7px",fontSize:7.5,fontWeight:600}}>
+        <div style={{position:"absolute",bottom:8,right:8,background:"rgba(0,0,0,.68)",backdropFilter:"blur(6px)",color:"#fff",borderRadius:999,padding:"3px 8px",fontSize:7.5,fontWeight:700}}>
           {subLabel()}
         </div>
-        {!p.s&&<div style={{position:"absolute",inset:0,background:"rgba(0,0,0,.55)",display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{color:"#fff",fontWeight:700,fontSize:11,background:"rgba(0,0,0,.6)",padding:"6px 14px",borderRadius:6}}>{t.outStock}</span></div>}
+        {!p.s&&<div style={{position:"absolute",inset:0,background:"rgba(0,0,0,.58)",display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{color:"#fff",fontWeight:700,fontSize:11,background:"rgba(0,0,0,.65)",padding:"6px 14px",borderRadius:999}}>{t.outStock}</span></div>}
       </div>
-      <div style={{padding:"12px 13px 13px"}}>
-        <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:4}}>
-          <span style={{fontSize:8.5,fontWeight:800,color:C.sub,letterSpacing:1,textTransform:"uppercase"}}>{brand?.name||p.brand}</span>
-          <div style={{display:"flex",alignItems:"center",gap:3}}><Stars r={p.r} C={C}/><span style={{fontSize:8.5,color:C.sub,marginLeft:1}}>({p.rv})</span></div>
+      <div style={{padding:"13px 14px 14px",display:"flex",flexDirection:"column",gap:8}}>
+        <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",gap:6}}>
+          <span style={{fontSize:8.4,fontWeight:800,color:C.sub,letterSpacing:1,textTransform:"uppercase"}}>{brand?.name||p.brand}</span>
+          <div style={{display:"flex",alignItems:"center",gap:3}}><Stars r={p.r} C={C}/><span style={{fontSize:8.4,color:C.sub,marginLeft:1}}>({p.rv})</span></div>
         </div>
-        <h3 className="UB" style={{fontWeight:700,fontSize:11,lineHeight:1.42,marginBottom:9,color:C.txt}}>{p.nm[lang]}</h3>
-        <div style={{display:"flex",gap:3,flexWrap:"wrap",marginBottom:11}}>
+        <h3 className="UB" style={{fontWeight:700,fontSize:11.5,lineHeight:1.35,minHeight:31,color:C.txt}}>{p.nm[lang]}</h3>
+        <div style={{display:"flex",gap:3,flexWrap:"wrap",minHeight:22}}>
           {p.sp[lang].slice(0,3).map((s,i)=>(
-            <span key={i} style={{fontSize:8,background:dark?"rgba(255,255,255,.06)":"rgba(0,0,0,.05)",borderRadius:4,padding:"2px 6px",color:C.sub,fontWeight:500}}>{s}</span>
+            <span key={i} style={{fontSize:8,background:dark?"rgba(255,255,255,.07)":"rgba(0,0,0,.05)",borderRadius:999,padding:"2px 6px",color:C.sub,fontWeight:500}}>{s}</span>
           ))}
         </div>
-        <div style={{display:"flex",alignItems:"flex-end",justifyContent:"space-between",gap:8}}>
+        <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",gap:8,marginTop:2}}>
           <div>
-            <div className="UB" style={{fontSize:19,fontWeight:900,color:C.txt,lineHeight:1}}>${p.usd.toLocaleString()}</div>
+            <div className="UB" style={{fontSize:18.5,fontWeight:900,color:C.txt,lineHeight:1}}>${p.usd.toLocaleString()}</div>
             <div style={{fontSize:8.5,color:C.sub,marginTop:2}}>{t.currency}</div>
           </div>
-          <motion.button whileTap={{scale:.9}}
-            onClick={e=>{e.stopPropagation();notify(`📞 ${p.nm[lang].slice(0,28)}...`);}}
-            style={{padding:"7px 12px",borderRadius:7,border:`1px solid ${C.bord}`,background:"transparent",cursor:"pointer",fontSize:10,fontWeight:600,fontFamily:"Onest",color:C.txt,transition:"all .2s",flexShrink:0}}
-            onMouseOver={e=>{e.currentTarget.style.background=C.txt;e.currentTarget.style.color=C.inv;e.currentTarget.style.borderColor=C.txt;}}
-            onMouseOut={e=>{e.currentTarget.style.background="transparent";e.currentTarget.style.color=C.txt;e.currentTarget.style.borderColor=C.bord;}}>
-            📞
-          </motion.button>
+          <div style={{display:"flex",alignItems:"center",gap:6,flexShrink:0}}>
+            <motion.button whileTap={{scale:.95}}
+              onClick={e=>{e.stopPropagation();onOpen(p);}}
+              style={{padding:"7px 10px",borderRadius:999,border:`1px solid ${C.bord}`,background:"transparent",cursor:"pointer",fontSize:10,fontWeight:700,fontFamily:"Onest",color:C.txt,transition:"all .2s"}}>
+              {t.details}
+            </motion.button>
+            <motion.button whileTap={{scale:.9}}
+              onClick={e=>{e.stopPropagation();notify(`📞 ${p.nm[lang].slice(0,28)}...`);}}
+              style={{padding:"7px 11px",borderRadius:999,border:`1px solid ${C.bord}`,background:"transparent",cursor:"pointer",fontSize:10,fontWeight:700,fontFamily:"Onest",color:C.txt,transition:"all .2s"}}
+              onMouseOver={e=>{e.currentTarget.style.background=C.txt;e.currentTarget.style.color=C.inv;e.currentTarget.style.borderColor=C.txt;}}
+              onMouseOut={e=>{e.currentTarget.style.background="transparent";e.currentTarget.style.color=C.txt;e.currentTarget.style.borderColor=C.bord;}}>
+              📞
+            </motion.button>
+          </div>
         </div>
       </div>
     </motion.div>
@@ -833,7 +865,10 @@ function PCard({p,lang,t,C,dark,onOpen,notify}){
 function PModal({p,lang,t,C,dark,onClose,notify}){
   const[tab,setTab]=useState("specs");
   const[imgOk,setImgOk]=useState(false);
+  const[imgError,setImgError]=useState(false);
   const brand=BL.find(b=>b.id===p.brand);
+  const noImage=!p.img || p.img.trim()==="" || p.img.startsWith("blob:") || p.img.includes("placehold.co");
+  const showEmptyState=noImage || imgError;
   useEffect(()=>{
     document.body.style.overflow="hidden";
     const fn=e=>e.key==="Escape"&&onClose();
@@ -863,12 +898,19 @@ function PModal({p,lang,t,C,dark,onClose,notify}){
         <div style={{padding:"20px"}}>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:18,marginBottom:20}}>
             <div style={{borderRadius:12,overflow:"hidden",aspectRatio:"1",background:dark?"#0c0c0c":"#F0F0F0",position:"relative"}}>
-              {!imgOk&&<div style={{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center",fontSize:44,opacity:.14}}>
+              {!imgOk&&!showEmptyState&&<div style={{position:"absolute",inset:0,display:"flex",alignItems:"center",justifyContent:"center",fontSize:44,opacity:.14}}>
                 {p.cat==="conditioner"?"❄️":p.cat==="fridge"?"🧊":p.cat==="washer"?"🔄":"🔧"}
               </div>}
-              <motion.img src={p.img} alt={p.nm[lang]} onLoad={()=>setImgOk(true)}
-                initial={{opacity:0}} animate={{opacity:imgOk?1:0}} transition={{duration:.35}}
-                style={{width:"100%",height:"100%",objectFit:"cover"}}/>
+              {showEmptyState?(
+                <div style={{width:"100%",height:"100%",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",gap:8,padding:16,background:dark?"#121212":"#F6F6F6",color:C.sub,textAlign:"center"}}>
+                  <span style={{fontSize:34}}>🖼️</span>
+                  <span style={{fontSize:12,fontWeight:700,letterSpacing:0.4}}>Rasm mavjud emas</span>
+                </div>
+              ):(
+                <motion.img src={p.img} alt={p.nm[lang]} onLoad={()=>{setImgOk(true);setImgError(false);}} onError={()=>setImgError(true)}
+                  initial={{opacity:0}} animate={{opacity:imgOk?1:0}} transition={{duration:.35}}
+                  style={{width:"100%",height:"100%",objectFit:"contain",objectPosition:"center",padding:16,background:dark?"#121212":"#F6F6F6",borderRadius:14}}/>
+              )}
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:11}}>
               <div>
@@ -980,6 +1022,7 @@ export default function App(){
   const filterCount=filters.brands.length+(filters.rating>0?1:0)+(filters.stock?1:0)+(filters.minUsd>0||filters.maxUsd<4000?1:0);
   const applyFilter=()=>{setFilters({...tmpF});setFilterOpen(false);notify(t.filterApplied);};
   const clearFilter=()=>{const d={brands:[],minUsd:0,maxUsd:4000,rating:0,stock:false};setTmpF(d);setFilters(d);notify(t.filterCleared);};
+  const scrollToProducts=()=>document.getElementById("products-section")?.scrollIntoView({behavior:"smooth",block:"start"});
 
   if(loading) return(<><style>{GS}</style><AnimatePresence><Loader onDone={()=>setLoading(false)}/></AnimatePresence></>);
 
@@ -1041,8 +1084,9 @@ export default function App(){
         </motion.nav>
 
         {/* HERO */}
-        <section style={{paddingTop:58,minHeight:340,display:"flex",alignItems:"center",borderBottom:`1px solid ${C.bord}`,position:"relative",overflow:"hidden"}}>
+        <section style={{paddingTop:58,minHeight:340,display:"flex",alignItems:"center",borderBottom:`1px solid ${C.bord}`,position:"relative",overflow:"hidden",background:dark?"linear-gradient(135deg, rgba(255,255,255,.03), transparent 70%)":"linear-gradient(135deg, rgba(0,0,0,.025), transparent 70%)"}}>
           <div style={{position:"absolute",inset:0,backgroundImage:`linear-gradient(${C.bord} 1px,transparent 1px),linear-gradient(90deg,${C.bord} 1px,transparent 1px)`,backgroundSize:"44px 44px",opacity:.5,pointerEvents:"none"}}/>
+          <div style={{position:"absolute",right:-80,top:-60,width:260,height:260,borderRadius:"50%",background:dark?"rgba(255,255,255,.04)":"rgba(0,0,0,.03)",filter:"blur(0px)",pointerEvents:"none"}}/>
           <div style={{maxWidth:1320,margin:"0 auto",padding:"52px 20px",position:"relative",zIndex:1,width:"100%"}}>
             <div style={{maxWidth:660}}>
               <motion.div initial={{opacity:0,y:18}} animate={{opacity:1,y:0}} transition={{delay:.08}}
@@ -1059,9 +1103,31 @@ export default function App(){
                 {t.payNote} · Hofmann · LG · Beston · Aufit · T-Tech · Ferre · Hisense · Immer · Bench
               </motion.p>
               <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.32}}
-                style={{display:"flex",gap:20,flexWrap:"wrap"}}>
+                style={{display:"flex",gap:12,flexWrap:"wrap",marginBottom:16}}>
                 {[["113",t.prods],["13","Brend"],["4",t.allBrands.split(" ")[0]]].map(([n,l])=>(
-                  <div key={l}><div className="UB" style={{fontSize:20,fontWeight:900,color:C.txt}}>{n}</div><div style={{fontSize:10,color:C.sub,marginTop:1}}>{l}</div></div>
+                  <div key={l} style={{padding:"8px 11px",borderRadius:10,border:`1px solid ${C.bord}`,background:dark?"rgba(255,255,255,.03)":"rgba(0,0,0,.02)"}}>
+                    <div className="UB" style={{fontSize:18,fontWeight:900,color:C.txt}}>{n}</div>
+                    <div style={{fontSize:10,color:C.sub,marginTop:1}}>{l}</div>
+                  </div>
+                ))}
+              </motion.div>
+              <motion.div initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{delay:.38}}
+                style={{display:"flex",gap:10,flexWrap:"wrap",marginBottom:16}}>
+                <motion.button whileHover={{scale:1.02}} whileTap={{scale:.96}} onClick={scrollToProducts}
+                  style={{padding:"10px 14px",borderRadius:999,border:"none",background:C.txt,color:C.inv,fontWeight:800,fontSize:11,cursor:"pointer",fontFamily:"Onest",boxShadow:"0 10px 24px rgba(0,0,0,.14)"}}>
+                  🛒 {t.catalog}
+                </motion.button>
+                <motion.button whileHover={{scale:1.02}} whileTap={{scale:.96}} onClick={()=>setContact(true)}
+                  style={{padding:"10px 14px",borderRadius:999,border:`1px solid ${C.bord}`,background:dark?"rgba(255,255,255,.04)":"rgba(0,0,0,.03)",color:C.txt,fontWeight:700,fontSize:11,cursor:"pointer",fontFamily:"Onest"}}>
+                  📞 {t.contactUs}
+                </motion.button>
+              </motion.div>
+              <motion.div initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{delay:.44}}
+                style={{display:"flex",gap:8,flexWrap:"wrap"}}>
+                {[["🚚",t.delivery],["🛡️",t.guarantee],["💳",t.install]].map(([ic,label])=>(
+                  <div key={label} style={{display:"inline-flex",alignItems:"center",gap:6,padding:"6px 10px",borderRadius:999,border:`1px solid ${C.bord}`,background:dark?"rgba(255,255,255,.03)":"rgba(0,0,0,.02)",fontSize:10,color:C.sub}}>
+                    <span>{ic}</span><span>{label}</span>
+                  </div>
                 ))}
               </motion.div>
             </div>
@@ -1069,7 +1135,7 @@ export default function App(){
         </section>
 
         {/* BRAND TICKER */}
-        <div style={{borderBottom:`1px solid ${C.bord}`,padding:"10px 0",overflow:"hidden",background:C.surf}} ref={tickRef}>
+        <div style={{borderBottom:`1px solid ${C.bord}`,padding:"10px 0",overflow:"hidden",background:dark?"rgba(255,255,255,.03)":"#fafafa"}} ref={tickRef}>
           <div className="ta">
             {[...BL,...BL,...BL].map((b,i)=>(
               <div key={i} style={{display:"inline-flex",alignItems:"center",justifyContent:"center",minWidth:88,height:32,borderRadius:6,border:`1px solid ${C.bord}`,background:"transparent",cursor:"pointer",flexShrink:0,padding:"0 12px",transition:"all .2s"}}
@@ -1127,15 +1193,51 @@ export default function App(){
           </div>
         </div>
 
+        {/* TRUST / BENEFITS */}
+        <section style={{maxWidth:1320,margin:"0 auto",padding:"0 20px 22px"}}>
+          <div style={{border:`1px solid ${C.bord}`,borderRadius:18,background:dark?"rgba(255,255,255,.03)":"rgba(0,0,0,.02)",padding:"18px 18px 16px",boxShadow:dark?"0 10px 30px rgba(0,0,0,.14)":"0 10px 30px rgba(0,0,0,.04)"}}>
+            <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",gap:12,flexWrap:"wrap",marginBottom:12}}>
+              <div>
+                <div className="UB" style={{fontSize:14,fontWeight:800,color:C.txt,marginBottom:4}}>{t.whyChoose}</div>
+                <div style={{fontSize:11,color:C.sub,lineHeight:1.6,maxWidth:560}}>{t.whyChooseDesc}</div>
+              </div>
+              <motion.button whileHover={{scale:1.01}} whileTap={{scale:.97}} onClick={()=>setContact(true)}
+                style={{padding:"8px 12px",borderRadius:999,border:`1px solid ${C.bord}`,background:C.txt,color:C.inv,fontWeight:700,fontSize:11,cursor:"pointer",fontFamily:"Onest"}}>
+                {t.contactUs}
+              </motion.button>
+            </div>
+            <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(180px,1fr))",gap:10}}>
+              {[{title:t.benefit1Title,text:t.benefit1Text},{title:t.benefit2Title,text:t.benefit2Text},{title:t.benefit3Title,text:t.benefit3Text}].map((item,i)=>(
+                <div key={item.title} style={{padding:"12px 12px",borderRadius:12,border:`1px solid ${C.bord}`,background:dark?"rgba(255,255,255,.03)":"rgba(255,255,255,.7)"}}>
+                  <div style={{fontSize:11,fontWeight:800,color:C.txt,marginBottom:4}}>{item.title}</div>
+                  <div style={{fontSize:10.5,color:C.sub,lineHeight:1.6}}>{item.text}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <div style={{maxWidth:1320,margin:"0 auto",padding:"0 20px 0"}}>
+          <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:18}}>
+            {[t.delivery,t.guarantee,t.install].map((label)=>(
+              <div key={label} style={{padding:"7px 10px",borderRadius:999,border:`1px solid ${C.bord}`,background:dark?"rgba(255,255,255,.03)":"rgba(0,0,0,.02)",fontSize:10,color:C.sub}}>{label}</div>
+            ))}
+          </div>
+        </div>
+
         {/* PRODUCTS */}
-        <section style={{maxWidth:1320,margin:"0 auto",padding:"22px 20px 80px"}}>
-          <div style={{display:"flex",alignItems:"center",gap:9,marginBottom:18}}>
+        <section id="products-section" style={{maxWidth:1320,margin:"0 auto",padding:"0 20px 80px"}}>
+          <div style={{display:"flex",alignItems:"center",gap:9,marginBottom:12,flexWrap:"wrap"}}>
             <h2 className="UB" style={{fontSize:15,fontWeight:800}}>{t[cat]||cat}</h2>
             <motion.span key={shown.length} initial={{scale:1.4}} animate={{scale:1}}
               style={{background:C.bord,color:C.sub,borderRadius:5,padding:"2px 9px",fontSize:10,fontWeight:600}}>
               {shown.length} {t.prods}
             </motion.span>
-            <div style={{flex:1,height:1,background:C.bord}}/>
+            {filterCount>0&&<motion.span initial={{opacity:0,x:-4}} animate={{opacity:1,x:0}}
+              style={{padding:"4px 9px",borderRadius:999,background:dark?"rgba(255,255,255,.06)":"rgba(0,0,0,.04)",color:C.txt,fontSize:10,fontWeight:700}}>
+              {t.activeFilters}: {filterCount}
+            </motion.span>}
+            <div style={{flex:1,height:1,background:C.bord,minWidth:160}}/>
           </div>
           {shown.length===0?(
             <motion.div initial={{opacity:0}} animate={{opacity:1}} style={{textAlign:"center",padding:"60px 20px"}}>
